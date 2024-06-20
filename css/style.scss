@@ -157,6 +157,90 @@ label {
 }
 // main
 
+// header
+.header {
+    padding-top: 20px;
+
+    .main_container {
+        background: $color-black80;
+        border-radius: 32px;
+        padding: 25px;
+        gap: 10px;
+        @include flex-center();
+    }
+
+    &_logo {
+        max-width: 102px;
+    }
+
+    .nav {
+        margin-left: auto;
+        &_link {
+            @include flex-start();
+            gap: 10px;
+        }
+        
+        &_item {
+            
+            a {
+                @include flex-center();
+                @include flex-column();
+                max-width: 68px;
+                gap: 9px;
+            }
+
+            &_icon {
+                @include flex-full-center();
+                width: 62px;
+                height: 62px;
+                border-radius: 50%;
+                background: $color-black90;
+            }
+
+            span {
+                width: 100%;
+                text-align: center;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 16px;
+                color: $color-white20
+            }
+        }
+    }
+
+    &_user {
+        @include flex-center();
+        gap: 5px;
+
+        &_name {
+            text-align: right;
+            max-width: 160px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-white100;
+        }
+
+        &_img {
+            @include flex-center();
+            @include flex-column();
+            gap: 5px;
+
+            img {
+                width: 94px;
+            }
+
+            .user_bottom {
+                width: 100%;
+                height: 25px;
+                border-radius: 32px;
+                background: $color-white100;
+            }
+        }
+    }
+}
+// header
+
 
 // login
 .login {
