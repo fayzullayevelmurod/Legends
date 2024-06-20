@@ -3,6 +3,10 @@
         &_container {
             max-width: calc(100% - 110px);
         }
+
+        &_content {
+            padding: 20px 11px;
+        }
     }
     
     .header {
@@ -29,12 +33,28 @@
             display: none;
         }
     }
+
+    .news {
+        &_card {
+            width: calc(100% / 2 - 7px);
+        }
+
+        &_cards {
+            gap: 14px;
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
     .main {
         &_container {
             max-width: calc(100% - 40px);
+        }
+    }
+
+    .news {
+        &_card {
+            width: calc(100%);
         }
     }
 }

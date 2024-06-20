@@ -431,6 +431,26 @@ label,
         border-radius: 32px;
         overflow: hidden;
 
+        &:hover {
+            .news_icon {
+                transform: rotate(42deg);
+                background: $color-white100;
+
+                svg {
+
+                    path {
+                        fill: $color-black100;
+                    }
+                }
+            }
+        }
+
+        .news_card_img {
+            img {
+                width: 100%;
+            }
+        }
+
         span {
             padding: 6px 14px;
             top: 24px;
@@ -466,6 +486,13 @@ label,
             border-radius: 50%;
             @include flex-full-center();
             background: $color-black80;
+            @include transition();
+
+            svg {
+                path {
+                    @include transition();
+                }
+            }
         }
 
         p {
