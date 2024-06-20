@@ -20,4 +20,27 @@
             max-width: calc(100% - 20px);
         }
     }
+
+    .login {
+        .main_container {
+            padding-top: 40px;
+            gap: 40px;
+        }
+
+        label {
+            width: 100%;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .btn_yellow {
+            width: 100%;
+        }
+    }
 }

@@ -88,6 +88,7 @@ body {
 
 input {
     outline: none;
+    border: none;
 }
 
 button {
@@ -204,7 +205,7 @@ label {
 
     input {
         text-align: center;
-        padding: 13px;
+        padding: 0 13px;
         border-radius: 32px;
         width: 400px;
         height: 50px;
@@ -212,6 +213,10 @@ label {
         font-weight: 400;
         line-height: 24px;
         letter-spacing: -0.005em;
+        color: $color-black100;
+    }
+
+    input::placeholder {
         color: $color-black100;
     }
 
