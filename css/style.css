@@ -585,6 +585,34 @@ label,
     top: 15px;
     right: 9px;
   }
+  .new .main_content {
+    gap: 14px;
+  }
+  .new_main_block {
+    padding: 15px 30px 30px 30px;
+  }
+  .new_logo {
+    margin: 60px 0;
+  }
+  .new_block .new_block_img {
+    height: 229px;
+  }
+  .new_block_yellow .new_block_img {
+    height: 172px;
+    padding: 11px;
+  }
+  .new_block_yellow button {
+    width: 100%;
+  }
+  .new_social {
+    justify-content: center;
+  }
+  .new_btns {
+    flex-direction: column;
+  }
+  .new_btns button {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .main_container {

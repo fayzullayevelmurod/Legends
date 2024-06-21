@@ -89,6 +89,50 @@
             }
         }
     }
+
+    .new {
+
+        .main_content {
+            gap: 14px;
+        }
+
+        &_main_block {
+            padding: 15px 30px 30px 30px;
+        }
+
+        &_logo {
+            margin: 60px 0;
+        }
+
+        &_block {
+            .new_block_img {
+                height: 229px;
+            }
+        }
+
+        &_block_yellow {
+            .new_block_img {
+                height: 172px;
+                padding: 11px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        &_social {
+            justify-content: center;
+        }
+
+        &_btns {
+            flex-direction: column;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
