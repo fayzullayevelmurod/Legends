@@ -731,6 +731,78 @@ label,
 }
 // promo
 
+// academy
+.academy {
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &_title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    a {
+        @include border-radius();
+        background: $color-black90;
+        padding: 20px;
+        @include flex-start();
+        justify-content: space-between;
+        @include transition();
+
+        &:hover{
+            .news_icon {
+                transform: rotate(42deg);
+            }
+        }
+    }
+
+    .news_icon {
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        @include flex-full-center();
+        @include transition();
+        background: $color-white100;
+
+        svg {
+            path {
+                fill: $color-black100;
+            }
+        }
+    }
+
+    .lock_icon {
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        @include flex-full-center();
+        background: $color-black70;
+     
+    }
+
+    h6 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $color-white100;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.005em;
+        color: $color-low-blue50;
+    }
+}
+// academy
+
 
 // footer
 .footer {
