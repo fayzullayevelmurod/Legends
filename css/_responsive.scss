@@ -79,6 +79,10 @@
         }
     }
 
+    .title_top {
+        margin: 10px 0;
+    }
+
     .news {
         &_card {
             width: calc(100%);
@@ -131,6 +135,16 @@
             button {
                 width: 100%;
             }
+        }
+    }
+
+    .promo {
+        &_cards {
+            flex-direction: column;
+        }
+
+        &_card {
+            width: 100%;
         }
     }
 }

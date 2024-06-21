@@ -662,6 +662,75 @@ label,
 }
 // new
 
+// promo
+.promo {
+    &_cards {
+        display: flex;
+        gap: 10px;
+    }
+
+    &_card {
+        width: calc(100% / 3 - 7px);
+        background: $color-black90;
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_img {
+            height: 208px;
+        }
+
+        &:hover {
+            .news_icon {
+                transform: rotate(42deg);
+                background: $color-white100;
+
+                svg {
+                    path {
+                        fill: $color-black100;
+                    }
+                }
+            }
+        }
+    }
+
+    .promo_img {
+        @include flex-full-center();
+    }
+
+    &_title {
+        padding: 13px 10px 20px 10px;
+        width: 100%;
+        justify-content: space-between;
+
+        h6 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-white100;
+        }
+    }
+
+    .news_icon {
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        @include flex-full-center();
+        background: $color-black80;
+        @include transition();
+
+        svg {
+            path {
+                @include transition();
+            }
+        }
+    }
+
+}
+// promo
+
 
 // footer
 .footer {
