@@ -191,6 +191,7 @@ label,
         letter-spacing: -0.005em;
         background: $color-yellow;
         @include transition();
+        @include flex-full-center();
 
         &:hover {
             background: $color-white100;
@@ -207,6 +208,7 @@ label,
         letter-spacing: -0.005em;
         background: $color-white100;
         @include transition();
+        @include flex-full-center();
 
         &:hover {
             background: $color-yellow;
@@ -939,6 +941,99 @@ label,
     }
 }
 // academy_cards
+
+// events
+.events {
+
+    &_blocks {
+        overflow: hidden;
+        display: flex;
+        background: $color-black90;
+        @include border-radius();
+        justify-content: space-between;
+    }
+
+    &_text {
+        // max-width: 650px;
+        padding: 40px 25px 40px 40px;
+
+        h4 {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            color: $color-white100;
+        }
+
+        p {
+            max-width: 637px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+            margin: 18px 0 35px 0;
+        }
+
+        .events_btns {
+            @include flex-center();
+            gap: 20px;
+        }
+
+        span {
+            margin-top: 22px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white50;
+        }
+    }
+
+    &_img {
+        max-width: 585px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    &_links {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &_item {
+        width: calc(100% / 2 - 5px);
+        @include border-radius();
+        overflow: hidden;
+        @include flex-full-center();
+        height: 94px;
+        
+        a {
+            width: 100%;
+            height: 100%;
+            background: $color-black90;
+            @include flex-full-center();
+            gap: 5px;
+            
+            &:hover {
+                @include icon_hover();
+            }
+        }
+
+        h6 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-white100;
+        }
+    }
+}
+// events
 
 
 // footer

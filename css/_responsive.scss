@@ -76,6 +76,24 @@
             width: calc(100% / 2 - 5px);
         }
     }
+
+    .events {
+        &_blocks {
+            flex-direction: column-reverse;
+        }
+
+        &_img {
+            max-width: 100%;
+        }
+
+        &_text {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -157,6 +175,30 @@
     .academy_cards {
         .academy_card {
             width: calc(100%);
+        }
+    }
+
+    .events {
+
+        &_text {
+            .events_btns {
+                width: 100%;
+                flex-direction: column;
+
+                .btn_yellow,
+                .btn_white {
+                    width: 100%;
+                }
+            }
+        }
+
+        &_item {
+            width: calc(100%);
+
+            a {
+                padding: 15px;
+                justify-content: space-between;
+            }
         }
     }
 }
