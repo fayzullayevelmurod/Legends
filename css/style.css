@@ -134,6 +134,21 @@ label,
   text-fill-color: transparent;
 }
 
+.news_icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  background: #101015;
+}
+.news_icon svg path {
+  fill: #FFFFFF;
+}
+
 .title_top {
   margin: 20px 0;
   padding: 22px 16px;
@@ -484,6 +499,9 @@ label,
 .new_block_yellow {
   background: #E0C170;
 }
+.new_block_yellow .btn_white:hover {
+  background: #FFFFFF;
+}
 .new_block_yellow .new_block_img {
   background: transparent;
 }
@@ -605,6 +623,64 @@ label,
   color: #2A2A31;
 }
 
+.academy_cards_blocks {
+  gap: 10px;
+}
+.academy_cards .academy_card {
+  width: calc(33.3333333333% - 7px);
+  background: #0A0A0C;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.academy_cards .academy_card .academy_card_img img {
+  width: 100%;
+}
+.academy_cards .academy_card:hover .news_icon {
+  transform: rotate(42deg);
+  background: #FFFFFF;
+}
+.academy_cards .academy_card:hover .news_icon svg path {
+  fill: #000000;
+}
+.academy_cards .academy_img_lock {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: rgba(10, 10, 12, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: column;
+}
+.academy_cards .academy_img_lock img {
+  width: 20px;
+  height: 20px;
+}
+.academy_cards .academy_img_lock span {
+  max-width: 310px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #FFFFFF;
+}
+.academy_cards .academy_card_title {
+  justify-content: space-between;
+  padding: 10px 10px 24px 22px;
+  gap: 10px;
+}
+.academy_cards h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -686,6 +762,9 @@ label,
     align-items: center;
     justify-content: center;
   }
+  .academy_cards .academy_card {
+    width: calc(50% - 5px);
+  }
 }
 @media only screen and (max-width: 993px) {
   .main_container {
@@ -733,6 +812,9 @@ label,
     flex-direction: column;
   }
   .promo_card {
+    width: 100%;
+  }
+  .academy_cards .academy_card {
     width: 100%;
   }
 }
