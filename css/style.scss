@@ -785,7 +785,8 @@ label,
         @include border-radius();
         background: $color-black90;
         padding: 20px;
-        @include flex-start();
+        display: flex;
+        align-items: center;
         justify-content: space-between;
         @include transition();
 
@@ -838,6 +839,39 @@ label,
     }
 }
 // academy
+
+// faq
+.faq {
+
+    .academy_list_item {
+        a {
+            align-items: center;
+
+            &:hover {
+                .news_icon {
+                    background: $color-white100;
+            
+                    svg {
+                        path {
+                            fill: $color-black80;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .news_icon {
+        background: $color-black80;
+
+        svg {
+            path {
+                fill: $color-white100;
+            }
+        }
+    }
+}
+// faq
 
 // academy_cards
 .academy_cards {

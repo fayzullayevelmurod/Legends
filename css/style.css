@@ -578,7 +578,7 @@ label,
   background: #0A0A0C;
   padding: 20px;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   transition: 0.3s ease;
 }
@@ -621,6 +621,22 @@ label,
   line-height: 24px;
   letter-spacing: -0.005em;
   color: #2A2A31;
+}
+
+.faq .academy_list_item a {
+  align-items: center;
+}
+.faq .academy_list_item a:hover .news_icon {
+  background: #FFFFFF;
+}
+.faq .academy_list_item a:hover .news_icon svg path {
+  fill: #101015;
+}
+.faq .news_icon {
+  background: #101015;
+}
+.faq .news_icon svg path {
+  fill: #FFFFFF;
 }
 
 .academy_cards_blocks {
