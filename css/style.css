@@ -862,6 +862,90 @@ label,
   color: #FFFFFF;
 }
 
+.venture_deals_block {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+}
+.venture_deals_block_text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 552px;
+}
+.venture_deals_block_text ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.venture_deals_block_text ul li {
+  list-style-type: decimal;
+}
+.venture_deals_block_result {
+  width: 633px;
+  background: #0A0A0C;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  gap: 50px;
+}
+.venture_deals_block_result ul {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.venture_deals_block_result .progress_block {
+  gap: 0;
+}
+.venture_deals_block_result li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.venture_deals_block_result .progress_wrapper {
+  margin-top: 12px;
+  overflow: hidden;
+  height: 5px;
+  border-radius: 24px;
+  background: #FFFFFF;
+  position: relative;
+}
+.venture_deals_block_result .progress_wrapper .progress_in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 90%;
+  border-radius: 24px;
+  background: #E0C170;
+}
+.venture_deals_block h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #E0C170;
+}
+.venture_deals_block p,
+.venture_deals_block li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.venture_deals_block .venture_btns {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.venture_deals_block .venture_btns button {
+  flex: 1;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
