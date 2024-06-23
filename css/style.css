@@ -946,6 +946,66 @@ label,
   flex: 1;
 }
 
+.venture_trading_title h4 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.venture_trading_title .btn_yellow {
+  gap: 7px;
+  width: 262px;
+}
+.venture_trading .links_btns {
+  max-width: 494px;
+}
+.venture_trading .links_btns .btn_white,
+.venture_trading .links_btns .btn_yellow {
+  gap: 7px;
+  width: 223px;
+}
+.venture_trading .venture_trading_card {
+  background: #0A0A0C;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.venture_trading .venture_trading_card .venture_card_text {
+  padding: 10px 30px;
+}
+.venture_trading .venture_trading_card .venture_trading_img {
+  margin: 10px 0;
+}
+.venture_trading .venture_trading_card .venture_trading_img img {
+  width: 100%;
+}
+.venture_trading .venture_trading_card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.venture_trading .venture_trading_card li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.venture_trading .venture_trading_card li span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.venture_trading .venture_trading_card li h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.venture_trading .venture_trading_card .btn_yellow {
+  width: 100%;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -1079,6 +1139,7 @@ label,
     width: 260px;
   }
   .title_top {
+    align-items: start !important;
     margin: 10px 0;
   }
   .news_card {

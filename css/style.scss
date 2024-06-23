@@ -1209,6 +1209,82 @@ label,
 }
 // venture
 
+.venture_trading {
+    &_title {
+        h4 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 44px;
+            color: $color-white100;
+        }
+
+        .btn_yellow {
+            gap: 7px;
+            width: 262px;
+        }
+    }
+
+    .links_btns {
+        max-width: 494px;
+
+        .btn_white,
+        .btn_yellow {
+            gap: 7px;
+            width: 223px;
+        }
+    }
+
+    .venture_trading_card {
+        background: $color-black90;
+        @include border-radius();
+        overflow: hidden;
+
+        .venture_card_text {
+            padding: 10px 30px;
+        }
+
+        .venture_trading_img {
+            margin: 10px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            @include flex-center();
+            justify-content: space-between;
+
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.005em;
+                color: $color-white100;
+            }
+
+            h6 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                color: $color-white100;
+            }
+        }
+
+        .btn_yellow {
+            width: 100%;
+        }
+    }
+
+}
+
 
 // footer
 .footer {
