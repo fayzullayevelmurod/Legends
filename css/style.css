@@ -114,6 +114,25 @@ label,
 .btn_yellow:hover {
   background: #FFFFFF;
 }
+.btn_black {
+  color: #FFFFFF;
+  width: 218px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  background: #1B1B20;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_black:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
 .btn_white {
   width: 218px;
   height: 50px;
@@ -138,6 +157,54 @@ label,
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.links_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 24px;
+  max-width: 568px;
+  margin: 20px auto;
+}
+.links_btns a {
+  flex: 1;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.pagination a {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  background: #1B1B20;
+  transition: 0.3s ease;
+}
+.pagination a span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.pagination a:hover {
+  background: #232327;
+}
+.pagination a.active {
+  background: #FFFFFF;
+}
+.pagination a.active span {
+  color: #101015;
 }
 
 .news_icon {
@@ -380,6 +447,13 @@ label,
   border-radius: 14px;
   background: #101015;
   color: #FFFFFF;
+}
+.news_card .status {
+  background: #FFFFFF;
+  color: #000000;
+}
+.news_card span.active {
+  background: #E0C170;
 }
 .news_card .new_card_text {
   padding: 10px 10px 42px 24px;
@@ -889,6 +963,18 @@ label,
 @media only screen and (max-width: 993px) {
   .main_container {
     max-width: calc(100% - 40px);
+  }
+  .pagination a {
+    flex-shrink: 0;
+  }
+  .links_btns {
+    flex-direction: column;
+  }
+  .links_btns .btn_white,
+  .links_btns .btn_black {
+    flex: none;
+    height: 50px;
+    width: 260px;
   }
   .title_top {
     margin: 10px 0;

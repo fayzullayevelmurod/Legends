@@ -198,6 +198,25 @@ label,
         }
     }
 
+    &_black {
+        color: $color-white100;
+        width: 218px;
+        height: 50px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.005em;
+        background: $color-black70;
+        @include transition();
+        @include flex-full-center();
+
+        &:hover {
+            background: $color-white100;
+            color: $color-black100;
+        }
+    }
+
     &_white {
         width: 218px;
         height: 50px;
@@ -226,6 +245,54 @@ label,
     text;
     text-fill-color:
     transparent;
+}
+
+.links_btns {
+    @include flex-full-center();
+    gap: 12px;
+    padding: 18px;
+    border-radius: 24px;
+    max-width: 568px;
+    margin: 20px auto;
+
+    a {
+        flex: 1;
+    }
+}
+
+.pagination {
+    margin-top: 20px;
+    @include flex-full-center();
+    gap: 14px;
+
+    a {
+        border-radius: 50%;
+        @include flex-full-center();
+        width: 51px;
+        height: 51px;
+        background: $color-black70;
+        @include transition();
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+        }
+
+        &:hover {
+            background: #232327;
+        }
+    }
+
+    a.active {
+        background: $color-white100;
+        
+        span {
+            color: $color-black80;
+        }
+    }
 }
 
 .news_icon {
@@ -531,6 +598,15 @@ label,
             border-radius: 14px;
             background: $color-black80;
             color: $color-white100;
+        }
+
+        .status {
+            background: $color-white100;
+            color: $color-black100;
+        }
+
+        span.active {
+            background: $color-yellow;
         }
 
         .new_card_text {
@@ -1034,6 +1110,12 @@ label,
     }
 }
 // events
+
+// venture
+.verture {
+    
+}
+// venture
 
 
 // footer

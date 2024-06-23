@@ -103,6 +103,23 @@
         }
     }
 
+    .pagination {
+        a {
+            flex-shrink: 0;
+        }
+    }
+
+    .links_btns {
+        flex-direction: column;
+
+        .btn_white,
+        .btn_black {
+            flex: none;
+            height: 50px;
+            width: 260px;
+        }
+    }
+
     .title_top {
         margin: 10px 0;
     }
