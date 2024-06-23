@@ -1209,6 +1209,7 @@ label,
 }
 // venture
 
+// venture_trading
 .venture_trading {
     &_title {
         h4 {
@@ -1234,7 +1235,12 @@ label,
         }
     }
 
-    .venture_trading_card {
+    &_cards {
+        gap: 20px;
+    }
+
+    &_card {
+        width: calc(100% / 3 - 14px);
         background: $color-black90;
         @include border-radius();
         overflow: hidden;
@@ -1284,7 +1290,7 @@ label,
     }
 
 }
-
+// venture_trading
 
 // footer
 .footer {
