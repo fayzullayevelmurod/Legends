@@ -1043,6 +1043,24 @@ label,
     flex-direction: column;
     text-align: center;
   }
+  .venture_deals_block {
+    flex-direction: column-reverse;
+  }
+  .venture_deals_block_result {
+    width: 100%;
+    gap: 15px;
+  }
+  .venture_deals_block_result .venture_btns {
+    margin-top: 14px;
+  }
+  .venture_deals_block_result .venture_btns .btn_white,
+  .venture_deals_block_result .venture_btns .btn_yellow {
+    width: 300px;
+    flex: none;
+  }
+  .venture_deals_block_text {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 993px) {
   .main_container {
@@ -1121,6 +1139,13 @@ label,
   .events_item a {
     padding: 15px;
     justify-content: space-between;
+  }
+  .venture_deals_block_result .venture_btns {
+    flex-direction: column;
+  }
+  .venture_deals_block_result .venture_btns .btn_white,
+  .venture_deals_block_result .venture_btns .btn_yellow {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {

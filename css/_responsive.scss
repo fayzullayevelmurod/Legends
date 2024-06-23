@@ -94,6 +94,29 @@
             text-align: center;
         }
     }
+
+    .venture_deals_block {
+        flex-direction: column-reverse;
+
+        &_result {
+            width: 100%;
+            gap: 15px;
+
+            .venture_btns {
+                margin-top: 14px;
+
+                .btn_white,
+                .btn_yellow {
+                    width: 300px;
+                    flex: none;
+                }
+            }
+        }
+
+        &_text {
+            max-width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -215,6 +238,19 @@
             a {
                 padding: 15px;
                 justify-content: space-between;
+            }
+        }
+    }
+
+    .venture_deals_block {
+        &_result {
+            .venture_btns {
+                flex-direction: column;
+
+                .btn_white,
+                .btn_yellow {
+                    width: 100%;
+                }
             }
         }
     }
