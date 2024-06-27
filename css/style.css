@@ -1030,14 +1030,15 @@ label,
   margin-bottom: 20px;
   padding: 15px 20px;
 }
-.node_cards .links_btns .btn_white {
-  gap: 8px;
-}
 .node_cards .links_btns .btn_black svg path {
   transition: 0.3s ease;
+  stroke: #FFFFFF;
 }
 .node_cards .links_btns .btn_black:hover svg path {
   stroke: black;
+}
+.node_cards .links_btns .btn_black.active svg path {
+  stroke: #000000;
 }
 .node_cards .links_btns .btn_black.active {
   background: #FFFFFF;
