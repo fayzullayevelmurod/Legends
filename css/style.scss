@@ -198,6 +198,23 @@ label,
         }
     }
 
+    &_blue {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+        color: $color-white100;
+        padding: 17px;
+        border-radius: 50px;
+        background: $color-blue;
+        @include transition();
+
+        &:hover {
+            background: $color-white100;
+            color: $color-black100;
+        }
+    }
+
     &_black {
         color: $color-white100;
         width: 218px;
@@ -1322,6 +1339,11 @@ label,
                 }
             }
         }
+
+        .btn_black.active {
+            background: $color-white100;
+            color: $color-black100;
+        }
     }
 
     .node_card_title {
@@ -1385,6 +1407,64 @@ label,
     }
 }
 // node_cards
+
+// node_trading_cards
+.node_trading {
+    &_cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &_card {
+        width: calc(100% / 2 - 5px);
+        @include border-radius();
+        background: $color-black90;
+        @include border-radius();
+        overflow: hidden;
+
+        .venture_trading_img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .venture_card_text {
+            padding: 10px 10px 25px 24px;
+            @include flex-center();
+            gap: 10px;
+            justify-content: space-between;
+
+            h6 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                color: $color-white100;
+            }
+        }
+
+        &:hover {
+            @include icon_hover();
+        }
+    }
+
+    .main_content_bottom {
+        margin-top: 20px;
+        padding: 15px 20px;
+        gap: 20px;
+        @include flex-center();
+        justify-content: space-between;
+
+        h4 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-white100;
+        }
+    }
+
+}
+// node_trading_cards
 
 // footer
 .footer {

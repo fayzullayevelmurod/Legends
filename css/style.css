@@ -114,6 +114,21 @@ label,
 .btn_yellow:hover {
   background: #FFFFFF;
 }
+.btn_blue {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  padding: 17px;
+  border-radius: 50px;
+  background: #086AD4;
+  transition: 0.3s ease;
+}
+.btn_blue:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
 .btn_black {
   color: #FFFFFF;
   width: 218px;
@@ -1024,6 +1039,10 @@ label,
 .node_cards .links_btns .btn_black:hover svg path {
   stroke: black;
 }
+.node_cards .links_btns .btn_black.active {
+  background: #FFFFFF;
+  color: #000000;
+}
 .node_cards .node_card_title {
   align-items: center;
 }
@@ -1067,6 +1086,56 @@ label,
 }
 .node_cards .venture_trading_card:hover .news_icon svg path {
   fill: #000000;
+}
+
+.node_trading_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.node_trading_card {
+  width: calc(50% - 5px);
+  border-radius: 32px;
+  background: #0A0A0C;
+  border-radius: 32px;
+  overflow: hidden;
+}
+.node_trading_card .venture_trading_img img {
+  width: 100%;
+}
+.node_trading_card .venture_card_text {
+  padding: 10px 10px 25px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+.node_trading_card .venture_card_text h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.node_trading_card:hover .news_icon {
+  transform: rotate(42deg);
+  background: #FFFFFF;
+}
+.node_trading_card:hover .news_icon svg path {
+  fill: #000000;
+}
+.node_trading .main_content_bottom {
+  margin-top: 20px;
+  padding: 15px 20px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.node_trading .main_content_bottom h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
 }
 
 .footer {
@@ -1327,6 +1396,13 @@ label,
   }
   .node_cards .node_cards_block .venture_trading_card {
     width: 100%;
+  }
+  .node_trading_card {
+    width: 100%;
+  }
+  .node_trading .main_content_bottom {
+    flex-direction: column;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {

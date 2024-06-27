@@ -331,10 +331,21 @@
 
         .node_cards_block {
             gap: 20px;
-            
+
             .venture_trading_card {
                 width: calc(100%);
             }
+        }
+    }
+
+    .node_trading {
+        &_card {
+            width: calc(100%);
+        }
+
+        .main_content_bottom {
+            flex-direction: column;
+            text-align: center;
         }
     }
 }
