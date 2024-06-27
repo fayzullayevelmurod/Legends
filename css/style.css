@@ -128,6 +128,7 @@ label,
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
 }
 .btn_black:hover {
   background: #FFFFFF;
@@ -1010,6 +1011,64 @@ label,
   width: 100%;
 }
 
+.node_cards .main_content_top {
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+.node_cards .links_btns .btn_white {
+  gap: 8px;
+}
+.node_cards .links_btns .btn_black svg path {
+  transition: 0.3s ease;
+}
+.node_cards .links_btns .btn_black:hover svg path {
+  stroke: black;
+}
+.node_cards .node_card_title {
+  align-items: center;
+}
+.node_cards .node_card_title h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.node_cards .node_card_title .btn_white {
+  justify-content: space-between;
+  width: 200px;
+  padding: 9px 11px;
+}
+.node_cards .node_card_title .btn_white:hover .news_icon {
+  transform: rotate(42deg);
+}
+.node_cards .node_card_title .btn_white span {
+  white-space: nowrap;
+  font-size: 12px;
+}
+.node_cards .node_card_title .btn_white .news_icon {
+  width: 31px;
+  height: 31px;
+}
+.node_cards .node_card_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 56px 24px;
+}
+.node_cards .node_card_text h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.node_cards .venture_trading_card:hover .news_icon {
+  background: #FFFFFF;
+  transform: rotate(41deg);
+}
+.node_cards .venture_trading_card:hover .news_icon svg path {
+  fill: #000000;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -1131,6 +1190,9 @@ label,
   .venture_trading_card {
     width: calc(33.3333333333% - 7px);
   }
+  .node_cards .node_cards_block .venture_trading_card {
+    width: calc(50% - 5px);
+  }
 }
 @media only screen and (max-width: 993px) {
   .main_container {
@@ -1140,6 +1202,7 @@ label,
     flex-shrink: 0;
   }
   .links_btns {
+    max-width: 100%;
     margin: 10px 0;
     flex-direction: column;
   }
@@ -1239,6 +1302,30 @@ label,
     width: 100%;
   }
   .venture_trading_card {
+    width: 100%;
+  }
+  .node_cards .links_btns {
+    padding: 18px 35px;
+  }
+  .node_cards .links_btns .btn_black,
+  .node_cards .links_btns .btn_white {
+    width: 100%;
+  }
+  .node_cards .main_content_top {
+    margin-bottom: 10px;
+  }
+  .node_cards .node_card_title {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+  .node_cards .node_card_title .btn_white {
+    width: 100%;
+  }
+  .node_cards .node_cards_block {
+    gap: 20px;
+  }
+  .node_cards .node_cards_block .venture_trading_card {
     width: 100%;
   }
 }

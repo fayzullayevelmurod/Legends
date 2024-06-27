@@ -127,6 +127,14 @@
             width: calc(100% / 3 - 7px);
         }
     }
+
+    .node_cards {
+        .node_cards_block {
+            .venture_trading_card {
+                width: calc(100% / 2 - 5px);
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -143,6 +151,7 @@
     }
 
     .links_btns {
+        max-width: 100%;
         margin: 10px 0;
         flex-direction: column;
 
@@ -294,6 +303,38 @@
 
         &_card {
             width: calc(100%);
+        }
+    }
+
+    .node_cards {
+        .links_btns {
+            padding: 18px 35px;
+            .btn_black,
+            .btn_white {
+                width: 100%;
+            }
+        }
+
+        .main_content_top {
+            margin-bottom: 10px;
+        }
+
+        .node_card_title {
+            flex-direction: column;
+            gap: 18px;
+            text-align: center;
+
+            .btn_white {
+                width: 100%;
+            }
+        }
+
+        .node_cards_block {
+            gap: 20px;
+            
+            .venture_trading_card {
+                width: calc(100%);
+            }
         }
     }
 }
