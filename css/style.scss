@@ -1472,6 +1472,51 @@ label,
 }
 // node_trading_cards
 
+// node_block
+.node_block {
+    .main_content {
+        padding: 40px;
+    }
+
+    &_in {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h3 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 48px;
+        color: $color-white100;
+    }
+
+    h6 {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        color: $color-white100;
+    }
+
+    img {
+        width: 100%;
+        @include border-radius();
+    }
+
+    li,p,a, span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.005em;
+        color: $color-white100;
+    }
+
+    .node_block_link {
+        text-decoration: underline;
+    }
+}
+// node_block
+
 // footer
 .footer {
     padding: 50px 0 40px 0;

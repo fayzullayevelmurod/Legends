@@ -1139,6 +1139,41 @@ label,
   color: #FFFFFF;
 }
 
+.node_block .main_content {
+  padding: 40px;
+}
+.node_block_in {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.node_block h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.node_block h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.node_block img {
+  width: 100%;
+  border-radius: 32px;
+}
+.node_block li, .node_block p, .node_block a, .node_block span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.node_block .node_block_link {
+  text-decoration: underline;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -1260,8 +1295,19 @@ label,
   .venture_trading_card {
     width: calc(33.3333333333% - 7px);
   }
-  .node_cards .node_cards_block .venture_trading_card {
+  .node_block .venture_trading_card {
     width: calc(50% - 5px);
+  }
+  .node_block_img {
+    height: 417px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .node_block .main_content {
+    padding: 10px 20px;
+  }
+  .node_block_in {
+    gap: 10px;
   }
 }
 @media only screen and (max-width: 993px) {
