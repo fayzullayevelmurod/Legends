@@ -8,7 +8,7 @@ var swiper = new Swiper(".eventSwiper", {
         640: {
             slidesPerView: 1.20,
         },
-        768: {
+        993: {
             slidesPerView: 3.10,
         },
         1200: {

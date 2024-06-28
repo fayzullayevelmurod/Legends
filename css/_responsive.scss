@@ -148,6 +148,18 @@
             gap: 10px;
         }
     }
+
+    .event {
+        &_in {
+            gap: 40px;
+        }
+
+        .event_tarif {
+            &_card {
+                width: calc(100% / 3 - 7px);
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -359,6 +371,37 @@
         .main_content_bottom {
             flex-direction: column;
             text-align: center;
+        }
+    }
+    .event {
+        &_in {
+            gap: 10px;
+        }
+
+        .bay_ticket {
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            padding: 20px 10px;
+
+            .btn_yellow {
+                width: 100%;
+            }
+        }
+
+        &_text {
+            padding: 0 10px;
+        }
+
+        .event_slider_title {
+            padding: 0 10px;
+        }
+    
+        .event_tarif {
+            &_card {
+                width: calc(100%);
+                gap: 40px;
+            }
         }
     }
 }
