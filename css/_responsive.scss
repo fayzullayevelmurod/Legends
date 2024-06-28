@@ -373,6 +373,7 @@
             text-align: center;
         }
     }
+
     .event {
         &_in {
             gap: 10px;
@@ -402,6 +403,12 @@
                 width: calc(100%);
                 gap: 40px;
             }
+        }
+    }
+
+    .faq_block {
+        .faq_title {
+            padding: 50px 15px;
         }
     }
 }

@@ -1307,6 +1307,84 @@ label,
   color: #FFFFFF;
 }
 
+.faq_block .faq_title {
+  padding: 70px 45px;
+  border-radius: 32px;
+  background: #0A0A0C;
+}
+.faq_block .faq_title h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.faq_block .faq {
+  margin-top: 10px;
+}
+.faq_block .faq .accordion-single {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq_block .faq .accordion-single-item {
+  border-radius: 24px;
+  background: #0A0A0C;
+}
+.faq_block .faq .accordion-single-title {
+  transition: 0.3s ease;
+  text-align: left;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+  cursor: pointer;
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.faq_block .faq .accordion-single-title .accardion_icon {
+  margin-left: 15px;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+}
+.faq_block .faq .accordion-single-title .accardion_icon .two {
+  transition: 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(270deg);
+}
+.faq_block .faq .accordion-single-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.faq_block .faq .accordion-single-content p {
+  padding: 0 20px 20px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.faq_block .faq .accordion-single-item.is-open .accordion-single-content {
+  max-height: 150px;
+}
+.faq_block .faq .accordion-single-item.is-open .accordion-single-title {
+  padding: 20px;
+}
+.faq_block .faq .accordion-single-item.is-open .accordion-single-title .accardion_icon .two {
+  opacity: 0;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -1611,6 +1689,9 @@ label,
   .event .event_tarif_card {
     width: 100%;
     gap: 40px;
+  }
+  .faq_block .faq_title {
+    padding: 50px 15px;
   }
 }
 @media only screen and (max-width: 768px) {

@@ -1675,6 +1675,93 @@ label,
 }
 // event
 
+// faq_block
+.faq_block {
+    .faq_title {
+        padding: 70px 45px;
+        @include border-radius();
+        background: $color-black90;
+
+        h3 {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            color: $color-white100;
+        }
+    }
+
+    .faq {
+        margin-top: 10px;
+
+        .accordion-single {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .accordion-single-item {
+            border-radius: 24px;
+            background: $color-black90;
+        }
+
+        .accordion-single-title {
+            transition: 0.3s ease;
+            text-align: left;
+            width: 100%;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-white100;
+            cursor: pointer;
+            position: relative;
+            margin: 0;
+            padding: 20px;
+            color: $color-white100;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+        }
+        .accordion-single-title .accardion_icon {
+            margin-left: 15px;
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            position: relative;
+        }
+        .accordion-single-title .accardion_icon .two {
+            transition: 0.3s ease;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(270deg);
+        }
+        .accordion-single-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        .accordion-single-content p {
+            padding: 0 20px 20px 20px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+        }
+        .accordion-single-item.is-open .accordion-single-content {
+            max-height: 150px;
+        }
+        .accordion-single-item.is-open .accordion-single-title {
+            padding: 20px;
+        }
+        .accordion-single-item.is-open .accordion-single-title .accardion_icon .two {
+            opacity: 0;
+        }
+    }
+}
+// faq_block
+
 // footer
 .footer {
     padding: 50px 0 40px 0;
