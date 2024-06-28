@@ -1174,6 +1174,95 @@ label,
   text-decoration: underline;
 }
 
+.event_in {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.event .event_block_img {
+  border-radius: 32px;
+}
+.event .bay_ticket {
+  background: #000000;
+  border-radius: 24px;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.event .bay_ticket_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.event .bay_ticket a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #E0C170;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 32px;
+}
+.event .bay_ticket h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.event_text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 20px;
+}
+.event_text h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #E0C170;
+}
+.event_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.event .event_slider_title {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.event .event_slider_title h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.event .eventSwiper .event_slide {
+  border-radius: 32px;
+  padding: 20px;
+  background: #0A0A0C;
+}
+.event .eventSwiper h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+.event .eventSwiper p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }

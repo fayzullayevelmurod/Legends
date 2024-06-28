@@ -1517,6 +1517,112 @@ label,
 }
 // node_block
 
+// event
+.event {
+    &_in {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .event_block_img {
+        @include border-radius();
+    }
+
+    .bay_ticket {
+        background: $color-black100;
+        border-radius: 24px;
+        padding: 20px;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-yellow;
+            @include flex-center();
+            gap: 9px;
+            margin-bottom: 32px;
+        }
+
+        h6 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-white100;
+        }
+    }
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 20px;
+
+        h3 {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            color: $color-yellow;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+        }
+    }
+
+    .event_slider_title {
+        padding: 0 20px;
+        @include flex-center();
+        justify-content: space-between;
+
+        h3 {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            color: $color-white100;
+        }
+    }
+
+    .eventSwiper {
+        .event_slide {
+            @include border-radius();
+            padding: 20px;
+            background: $color-black90;
+        }
+
+        h6 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $color-white100;
+            margin-bottom: 11px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+        }
+    }
+}
+// event
+
 // footer
 .footer {
     padding: 50px 0 40px 0;
