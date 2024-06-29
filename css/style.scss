@@ -178,6 +178,18 @@ label,
         border-radius: 32px;
         padding: 20px 14px;
     }
+
+    &_input {
+        height: 50px;
+        border-radius: 12px;
+        background: $color-white100;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+        text-align: center;
+        color: $color-black100;
+    }
 }
 
 .btn {
@@ -2079,6 +2091,129 @@ label,
     }
 }
 // autodrop_mainet
+
+// autodrop_pool_cards
+.autodrop_pool_cards {
+
+    .links_btns {
+        .btn_black {
+            svg {
+                path {
+                    @include transition();
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        stroke: $color-black90;
+                    }
+                }
+            }
+        }
+
+        .btn_black.active {
+            background: $color-white100;
+            color: $color-black90;
+
+            svg {
+                path {
+                    stroke: $color-black90;
+                }
+            }
+        }
+    }
+
+    &_progress {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+        }
+
+        .progress_in {
+            position: relative;
+            height: 1px;
+            width: 320px;
+            background: $color-white100;
+
+            .progress_bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 70%;
+                height: 100%;
+                background: $color-yellow;
+            }
+        }
+
+        ul {
+            li {
+                @include flex-center();
+                justify-content: space-between;
+
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: -0.005em;
+                    color: $color-low-blue;
+                }
+            }
+        }
+    }
+
+    .main_content {
+        padding: 20px 40px;
+    }
+
+    .autodrop_pool_cards_blocks {
+        display: flex;
+        gap: 10px;
+    }
+
+    .autodrop_pool_card {
+        overflow: hidden;
+        width: calc(100% / 3 - 7px);
+        @include border-radius();
+        background: $color-black90;
+
+        &:hover {
+            @include icon_hover();
+        }
+    }
+
+    .pool_title {
+        @include flex-center();
+        justify-content: space-between;
+        padding: 5px 5px 5px 24px;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px 10px;
+    }
+
+    h6 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        color: $color-white100;
+    }
+
+    .btn_yellow {
+        width: 100%;
+    }
+}
+// autodrop_pool_cards
 
 
 // footer

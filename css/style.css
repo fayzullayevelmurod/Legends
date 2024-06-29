@@ -96,6 +96,17 @@ label,
   border-radius: 32px;
   padding: 20px 14px;
 }
+.main_input {
+  height: 50px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #000000;
+}
 
 .btn_yellow {
   width: 218px;
@@ -1634,6 +1645,99 @@ label,
   border-radius: 8px;
 }
 
+.autodrop_pool_cards .links_btns .btn_black svg path {
+  transition: 0.3s ease;
+}
+.autodrop_pool_cards .links_btns .btn_black:hover svg path {
+  stroke: #0A0A0C;
+}
+.autodrop_pool_cards .links_btns .btn_black.active {
+  background: #FFFFFF;
+  color: #0A0A0C;
+}
+.autodrop_pool_cards .links_btns .btn_black.active svg path {
+  stroke: #0A0A0C;
+}
+.autodrop_pool_cards_progress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.autodrop_pool_cards_progress p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.autodrop_pool_cards_progress .progress_in {
+  position: relative;
+  height: 1px;
+  width: 320px;
+  background: #FFFFFF;
+}
+.autodrop_pool_cards_progress .progress_in .progress_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: #E0C170;
+}
+.autodrop_pool_cards_progress ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.autodrop_pool_cards_progress ul li span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #646471;
+}
+.autodrop_pool_cards .main_content {
+  padding: 20px 40px;
+}
+.autodrop_pool_cards .autodrop_pool_cards_blocks {
+  display: flex;
+  gap: 10px;
+}
+.autodrop_pool_cards .autodrop_pool_card {
+  overflow: hidden;
+  width: calc(33.3333333333% - 7px);
+  border-radius: 32px;
+  background: #0A0A0C;
+}
+.autodrop_pool_cards .autodrop_pool_card:hover .news_icon {
+  transform: rotate(42deg);
+  background: #FFFFFF;
+}
+.autodrop_pool_cards .autodrop_pool_card:hover .news_icon svg path {
+  fill: #000000;
+}
+.autodrop_pool_cards .pool_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5px 5px 24px;
+}
+.autodrop_pool_cards .btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 10px;
+}
+.autodrop_pool_cards h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.autodrop_pool_cards .btn_yellow {
+  width: 100%;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -2027,6 +2131,31 @@ label,
     height: 61px;
   }
   .autodrop_mainet .btn_yellow {
+    width: 100%;
+  }
+  .autodrop_pool_cards .title_top {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .autodrop_pool_cards .autodrop_progress {
+    width: 95%;
+  }
+  .autodrop_pool_cards .autodrop_progress .progress_in {
+    width: 100%;
+  }
+  .autodrop_pool_cards .links_btns .btn_black {
+    width: 100%;
+  }
+  .autodrop_pool_cards_blocks {
+    flex-direction: column;
+  }
+  .autodrop_pool_cards .main_content {
+    padding: 20px 14px;
+  }
+  .autodrop_pool_cards .autodrop_pool_card {
+    width: 100%;
+  }
+  .autodrop_pool_cards .autodrop_pool_card img {
     width: 100%;
   }
 }

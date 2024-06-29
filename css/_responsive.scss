@@ -542,6 +542,44 @@
             width: 100%;
         }
     }
+
+    .autodrop_pool_cards {
+
+        .title_top {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .autodrop_progress {
+            width: 95%;
+
+            .progress_in {
+                width: 100%;
+            }
+        }
+
+        .links_btns {
+            .btn_black {
+                width: 100%;
+            }
+        }
+
+        &_blocks {
+            flex-direction: column;
+        }
+
+        .main_content {
+            padding: 20px 14px;
+        }
+
+        .autodrop_pool_card {
+            width: calc(100%);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
