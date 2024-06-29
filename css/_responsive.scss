@@ -486,6 +486,13 @@
                 }
             }
         }
+
+        &_mail {
+            &_link {
+                padding: 15px;
+                width: calc(100%);
+            }
+        }
     }
 }
 

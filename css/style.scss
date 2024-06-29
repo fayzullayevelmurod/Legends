@@ -1951,6 +1951,59 @@ label,
             }
         }
     }
+
+    &_mail {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 22px;
+
+        &_link {
+            width: calc(100% / 2 - 11px);
+            @include border-radius();
+            padding: 15px 24px;
+            background: $color-black90;
+            @include flex-center();
+            justify-content: space-between;
+
+            .news_icon {
+                @include transition();
+
+                svg {
+                    path {
+                        @include transition();
+                    }
+                }
+            }
+
+            &:hover {
+                @include icon_hover();
+            }
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 44px;
+            color: $color-white100;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white90;
+            margin: 4px 0;
+        }
+
+        span {
+            color: $color-white50;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: -0.005em;
+        }
+    }
 }
 // autodrop
 
