@@ -184,6 +184,7 @@ label,
   border-radius: 24px;
   max-width: 568px;
   margin: 20px auto;
+  background: #101015;
 }
 .links_btns a {
   flex: 1;
@@ -1390,6 +1391,114 @@ label,
 }
 .faq_block .faq .accordion-single-item.is-open .accordion-single-title .accardion_icon .two {
   opacity: 0;
+}
+
+.autodrop .links_btns .btn_black svg path {
+  transition: 0.3s ease;
+}
+.autodrop .links_btns .btn_black:hover svg path {
+  stroke: #0A0A0C;
+}
+.autodrop .links_btns .btn_black.active {
+  background: #FFFFFF;
+  color: #0A0A0C;
+}
+.autodrop .links_btns .btn_black.active svg path {
+  stroke: #0A0A0C;
+}
+.autodrop_progress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.autodrop_progress p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.autodrop_progress .progress_in {
+  position: relative;
+  height: 1px;
+  width: 320px;
+  background: #FFFFFF;
+}
+.autodrop_progress .progress_in .progress_bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background: #E0C170;
+}
+.autodrop_progress ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.autodrop_progress ul li span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: #646471;
+}
+.autodrop_blocks {
+  display: flex;
+  gap: 10px;
+}
+.autodrop_block {
+  width: 100%;
+  background: #0A0A0C;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.autodrop_block_text {
+  padding: 40px 25px 40px 40px;
+}
+.autodrop_block h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.autodrop_block p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  max-width: 637px;
+}
+.autodrop_block .btn_white {
+  width: 260px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+}
+.autodrop_block .btn_white .news_icon {
+  width: 31px;
+  height: 31px;
+}
+.autodrop_block .btn_white .news_icon svg {
+  width: 10px;
+  height: 10px;
+}
+.autodrop_block span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #878787;
 }
 
 .footer {

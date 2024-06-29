@@ -272,6 +272,7 @@ label,
     border-radius: 24px;
     max-width: 568px;
     margin: 20px auto;
+    background: $color-black80;
 
     a {
         flex: 1;
@@ -1769,6 +1770,147 @@ label,
     }
 }
 // faq_block
+
+// autodrop
+.autodrop {
+    .links_btns {
+        .btn_black {
+            svg {
+                path {
+                    @include transition();
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        stroke: $color-black90;
+                    }
+                }
+            }
+        }
+
+        .btn_black.active {
+            background: $color-white100;
+            color: $color-black90;
+
+            svg {
+                path {
+                    stroke: $color-black90;
+                }
+            }
+        }
+    }
+
+    &_progress {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+        }
+
+        .progress_in {
+            position: relative;
+            height: 1px;
+            width: 320px;
+            background: $color-white100;
+
+            .progress_bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 70%;
+                height: 100%;
+                background: $color-yellow;
+            }
+        }
+
+        ul {
+            li {
+                @include flex-center();
+                justify-content: space-between;
+
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: -0.005em;
+                    color: $color-low-blue;
+                }
+            }
+        }
+    }
+
+    &_blocks {
+        display: flex;
+        gap: 10px;
+    }
+
+    &_block {
+        width: 100%;
+        background: $color-black90;
+        @include border-radius();
+        @include flex-center();
+        justify-content: space-between;
+
+        &_text {
+            padding: 40px 25px 40px 40px;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            color: $color-white100;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
+            max-width: 637px;
+        }
+
+        .btn_white {
+            width: 260px;
+            padding: 10px;
+            @include flex-center();
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: -0.005em;
+            white-space: nowrap;
+
+            .news_icon {
+                width: 31px;
+                height: 31px;
+
+                svg {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white50;
+        }
+    }
+}
+// autodrop
 
 
 // footer
