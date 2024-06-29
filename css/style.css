@@ -1446,6 +1446,7 @@ label,
 }
 .autodrop_blocks {
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 .autodrop_block {
@@ -1466,6 +1467,7 @@ label,
   color: #FFFFFF;
 }
 .autodrop_block p {
+  margin: 18px 0 35px 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1493,12 +1495,45 @@ label,
   width: 10px;
   height: 10px;
 }
+.autodrop_block .btn_white:hover .news_icon {
+  transform: rotate(42deg);
+}
 .autodrop_block span {
+  margin-top: 22px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
   color: #878787;
+}
+.autodrop_bottom {
+  display: flex;
+  gap: 10px;
+}
+.autodrop_bottom .autodrop_block {
+  padding: 10px 20px;
+}
+.autodrop_bottom .autodrop_block_text {
+  padding: 0;
+}
+.autodrop_bottom .autodrop_block .news_icon {
+  transition: 0.3s ease;
+}
+.autodrop_bottom .autodrop_block .news_icon svg path {
+  transition: 0.3s ease;
+}
+.autodrop_bottom .autodrop_block:hover .news_icon {
+  transform: rotate(42deg);
+  background: #FFFFFF;
+}
+.autodrop_bottom .autodrop_block:hover .news_icon svg path {
+  fill: #000000;
+}
+.autodrop_bottom .autodrop_block h6 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #FFFFFF;
 }
 
 .footer {
@@ -1641,6 +1676,20 @@ label,
   }
   .event .event_tarif_card {
     width: calc(33.3333333333% - 7px);
+  }
+  .autodrop_blocks .autodrop_block {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .autodrop_blocks .autodrop_block .btn_white {
+    margin: 0 auto;
+  }
+  .autodrop_blocks .autodrop_block_text {
+    padding: 26px 0;
+  }
+  .autodrop_bottom .autodrop_block {
+    text-align: left;
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 993px) {
@@ -1808,6 +1857,42 @@ label,
   }
   .faq_block .faq_title {
     padding: 50px 15px;
+  }
+  .autodrop .title_top {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .autodrop .autodrop_progress {
+    width: 100%;
+  }
+  .autodrop .autodrop_progress .progress_in {
+    width: 100%;
+  }
+  .autodrop .links_btns .btn_black {
+    width: 100%;
+  }
+  .autodrop_blocks .autodrop_block {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .autodrop_blocks .autodrop_block .btn_white {
+    margin: 0 auto;
+  }
+  .autodrop_blocks .autodrop_block_text {
+    padding: 26px 0;
+  }
+  .autodrop_bottom {
+    flex-direction: column;
+  }
+  .autodrop_bottom .autodrop_block {
+    text-align: left;
+    flex-direction: column-reverse;
+  }
+  .autodrop_bottom .autodrop_block_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
   }
 }
 @media only screen and (max-width: 768px) {
