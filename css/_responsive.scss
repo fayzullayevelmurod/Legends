@@ -184,6 +184,12 @@
             }
         }
     }
+
+    .autodrop_mainet {
+        &_block {
+            width: calc(100%);
+        }
+    }
 }
 
 @media only screen and (max-width: 993px) {
@@ -444,7 +450,7 @@
         }
 
         .autodrop_progress {
-            width: 100%;
+            width: 95%;
 
             .progress_in {
                 width: 100%;
@@ -492,6 +498,48 @@
                 padding: 15px;
                 width: calc(100%);
             }
+        }
+    }
+
+    .autodrop_mainet {
+        .title_top {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .autodrop_progress {
+            width: 95%;
+
+            .progress_in {
+                width: 100%;
+            }
+        }
+
+        .links_btns {
+            .btn_black {
+                width: 100%;
+            }
+        }
+
+        &_block {
+            width: calc(100% / 2 - 5px);
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 8px;
+
+            &_text {
+                flex-direction: column;
+                gap: 10px;
+
+                img {
+                    width: 61px;
+                    height: 61px;
+                }
+            }
+        }
+
+        .btn_yellow {
+            width: 100%;
         }
     }
 }

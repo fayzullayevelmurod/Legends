@@ -2007,6 +2007,79 @@ label,
 }
 // autodrop
 
+// autodrop_mainet
+.autodrop_mainet {
+    .links_btns {
+        .btn_black {
+            svg {
+                path {
+                    @include transition();
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        stroke: $color-black90;
+                    }
+                }
+            }
+        }
+
+        .btn_black.active {
+            background: $color-white100;
+            color: $color-black90;
+
+            svg {
+                path {
+                    stroke: $color-black90;
+                }
+            }
+        }
+    }
+
+    &_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &_block {
+        width: calc(100% / 2 - 5px);
+        @include border-radius();
+        padding: 20px;
+        background: $color-black100;
+        @include flex-center();
+        justify-content: space-between;
+        gap: 24px;
+
+        &_text {
+            @include flex-center();
+            gap: 28px;
+        }
+
+        h6 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 44px;
+            color: $color-white100;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white50;
+        }
+    }
+
+    .btn_yellow {
+        border-radius: 8px;
+    }
+}
+// autodrop_mainet
+
 
 // footer
 .footer {
