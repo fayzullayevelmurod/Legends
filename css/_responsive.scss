@@ -550,6 +550,10 @@
             gap: 10px;
         }
 
+        .autodrop_blast_title {
+            flex-direction: row;
+        }
+
         .autodrop_progress {
             width: 95%;
 
@@ -576,6 +580,19 @@
             width: calc(100%);
 
             img {
+                width: 100%;
+            }
+        }
+
+        .autodrop_top_block {
+            flex-direction: column;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+            }
+
+            .autodrop_top_main {
                 width: 100%;
             }
         }
