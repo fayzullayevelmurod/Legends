@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css file -->
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- css link -->
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="main_container">
+                <div class="header_top">
+                    <a href="/" class="header_logo">
+                        <img src="./images/logo/header_logo.svg" alt="">
+                    </a>
+                    <nav class="nav dektop_menu">
+                        <ul class="nav_link">
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.1396 20.6198C16.2596 20.8798 15.2196 20.9998 13.9996 20.9998H7.99962C6.77962 20.9998 5.73962 20.8798 4.85962 20.6198C5.07962 18.0198 7.74962 15.9697 10.9996 15.9697C14.2496 15.9697 16.9196 18.0198 17.1396 20.6198Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 1H8C3 1 1 3 1 8V14C1 17.78 2.14 19.85 4.86 20.62C5.08 18.02 7.75 15.97 11 15.97C14.25 15.97 16.92 18.02 17.14 20.62C19.86 19.85 21 17.78 21 14V8C21 3 19 1 14 1ZM11 13.17C9.02 13.17 7.42 11.56 7.42 9.58002C7.42 7.60002 9.02 6 11 6C12.98 6 14.58 7.60002 14.58 9.58002C14.58 11.56 12.98 13.17 11 13.17Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.5797 9.58002C14.5797 11.56 12.9797 13.17 10.9997 13.17C9.01968 13.17 7.41968 11.56 7.41968 9.58002C7.41968 7.60002 9.01968 6 10.9997 6C12.9797 6 14.5797 7.60002 14.5797 9.58002Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Личный кабинет
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="active">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.11005 10.1494H6.46005C5.83005 10.1494 5.32007 10.6594 5.32007 11.2894V16.4094H9.11005V10.1494V10.1494Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.7613 5.59961H10.2413C9.6113 5.59961 9.10132 6.10962 9.10132 6.73962V16.3997H12.8913V6.73962C12.8913 6.10962 12.3913 5.59961 11.7613 5.59961Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5482 11.8496H12.8982V16.3997H16.6882V12.9896C16.6782 12.3596 16.1682 11.8496 15.5482 11.8496Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 21H14C19 21 21 19 21 14V8C21 3 19 1 14 1H8C3 1 1 3 1 8V14C1 19 3 21 8 21Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>            
+                                    </div>
+                                    <span>
+                                        Новости
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.02 1.83626L2.63 6.03626C1.73 6.73626 1 8.22626 1 9.35626V16.7663C1 19.0863 2.89 20.9863 5.21 20.9863H16.79C19.11 20.9863 21 19.0863 21 16.7763V9.49626C21 8.28626 20.19 6.73626 19.2 6.04626L13.02 1.71626C11.62 0.736256 9.37 0.786256 8.02 1.83626Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.5 10.4961L11.3 14.6961L9.7 12.2961L6.5 15.4961" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 10.4961H15.5V12.4961" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <svg>
+                                    </div>
+                                    <span>
+                                        Венчурные сделки
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 9H6C8 9 9 8 9 6V4C9 2 8 1 6 1H4C2 1 1 2 1 4V6C1 8 2 9 4 9Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 9H18C20 9 21 8 21 6V4C21 2 20 1 18 1H16C14 1 13 2 13 4V6C13 8 14 9 16 9Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M16 21H18C20 21 21 20 21 18V16C21 14 20 13 18 13H16C14 13 13 14 13 16V18C13 20 14 21 16 21Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4 21H6C8 21 9 20 9 18V16C9 14 8 13 6 13H4C2 13 1 14 1 16V18C1 20 2 21 4 21Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Ноды
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.68011 10.9098L9.33011 11.3198L8.38013 15.1599C8.16013 16.0599 8.60011 16.3598 9.36011 15.8298L14.5401 12.2398C15.1701 11.7998 15.0801 11.2898 14.3301 11.0998L12.6801 10.6898L13.6301 6.84981C13.8501 5.94981 13.4101 5.64983 12.6501 6.17983L7.47012 9.76986C6.84012 10.2099 6.93011 10.7198 7.68011 10.9098Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Автодропы
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.0488 1.53321L3.0288 5.46321C1.0988 6.72321 1.0988 9.54321 3.0288 10.8032L9.0488 14.7332C10.1288 15.4432 11.9088 15.4432 12.9888 14.7332L18.9788 10.8032C20.8988 9.54321 20.8988 6.73321 18.9788 5.47321L12.9888 1.54321C11.9088 0.82321 10.1288 0.82321 9.0488 1.53321Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.6289 12.083L4.6189 16.773C4.6189 18.043 5.5989 19.403 6.7989 19.803L9.9889 20.863C10.5389 21.043 11.4489 21.043 12.0089 20.863L15.1989 19.803C16.3989 19.403 17.3789 18.043 17.3789 16.773V12.133" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20.3987 14.0029V8.00293" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Академия
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.00007 21H15.0001C19.0201 21 19.7401 19.39 19.9501 17.43L20.7001 9.43C20.9701 6.99 20.2701 5 16.0001 5H6.00007C1.73007 5 1.03007 6.99 1.30007 9.43L2.05007 17.43C2.26007 19.39 2.98007 21 7.00007 21Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7 5V4.2C7 2.43 7 1 10.2 1H11.8C15 1 15 2.43 15 4.2V5" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13 12V13C13 13.01 13 13.01 13 13.02C13 14.11 12.99 15 11 15C9.02 15 9 14.12 9 13.03V12C9 11 9 11 10 11H12C13 11 13 11 13 12Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20.65 10C18.34 11.68 15.7 12.68 13 13.02" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M1.62012 10.2705C3.87012 11.8105 6.41012 12.7405 9.00012 13.0305" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Бизнес Академия
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.0001 2H8.0001C6.0501 7.84 6.0501 14.16 8.0001 20H7.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14 2C15.95 7.84 15.95 14.16 14 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 15V14C7.84 15.95 14.16 15.95 20 14V15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2 7.99961C7.84 6.04961 14.16 6.04961 20 7.99961" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        События
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.01 2.92031L18.91 5.54031C20.61 6.29031 20.61 7.53031 18.91 8.28031L13.01 10.9003C12.34 11.2003 11.24 11.2003 10.57 10.9003L4.67002 8.28031C2.97002 7.53031 2.97002 6.29031 4.67002 5.54031L10.57 2.92031C11.24 2.62031 12.34 2.62031 13.01 2.92031Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 11C3 11.84 3.63 12.81 4.4 13.15L11.19 16.17C11.71 16.4 12.3 16.4 12.81 16.17L19.6 13.15C20.37 12.81 21 11.84 21 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 16C3 16.93 3.55 17.77 4.4 18.15L11.19 21.17C11.71 21.4 12.3 21.4 12.81 21.17L19.6 18.15C20.45 17.77 21 16.93 21 16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Промо
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#">
+                                    <div class="nav_item_icon">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 17.4356H12L7.54999 20.3956C6.88999 20.8356 6 20.3656 6 19.5656V17.4356C3 17.4356 1 15.4356 1 12.4356V6.43555C1 3.43555 3 1.43555 6 1.43555H16C19 1.43555 21 3.43555 21 6.43555V12.4356C21 15.4356 19 17.4356 16 17.4356Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.0001 10.3652V10.1553C11.0001 9.47527 11.4201 9.11526 11.8401 8.82526C12.2501 8.54526 12.66 8.18527 12.66 7.52527C12.66 6.60527 11.9201 5.86523 11.0001 5.86523C10.0801 5.86523 9.34009 6.60527 9.34009 7.52527" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.9955 12.7559H11.0045" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>
+                                        Faq
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="header_user">
+                        <h6 class="header_user_name">
+                            Александр Дроздов
+                        </h6>
+                        <div class="header_user_img">
+                            <img src="./images/header_user.png" alt="">
+                            <span class="user_bottom"></span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="nav header_bottom">
+                    <ul class="nav_link">
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.1396 20.6198C16.2596 20.8798 15.2196 20.9998 13.9996 20.9998H7.99962C6.77962 20.9998 5.73962 20.8798 4.85962 20.6198C5.07962 18.0198 7.74962 15.9697 10.9996 15.9697C14.2496 15.9697 16.9196 18.0198 17.1396 20.6198Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14 1H8C3 1 1 3 1 8V14C1 17.78 2.14 19.85 4.86 20.62C5.08 18.02 7.75 15.97 11 15.97C14.25 15.97 16.92 18.02 17.14 20.62C19.86 19.85 21 17.78 21 14V8C21 3 19 1 14 1ZM11 13.17C9.02 13.17 7.42 11.56 7.42 9.58002C7.42 7.60002 9.02 6 11 6C12.98 6 14.58 7.60002 14.58 9.58002C14.58 11.56 12.98 13.17 11 13.17Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.5797 9.58002C14.5797 11.56 12.9797 13.17 10.9997 13.17C9.01968 13.17 7.41968 11.56 7.41968 9.58002C7.41968 7.60002 9.01968 6 10.9997 6C12.9797 6 14.5797 7.60002 14.5797 9.58002Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    Личный кабинет
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class="active">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.11005 10.1494H6.46005C5.83005 10.1494 5.32007 10.6594 5.32007 11.2894V16.4094H9.11005V10.1494V10.1494Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.7613 5.59961H10.2413C9.6113 5.59961 9.10132 6.10962 9.10132 6.73962V16.3997H12.8913V6.73962C12.8913 6.10962 12.3913 5.59961 11.7613 5.59961Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.5482 11.8496H12.8982V16.3997H16.6882V12.9896C16.6782 12.3596 16.1682 11.8496 15.5482 11.8496Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8 21H14C19 21 21 19 21 14V8C21 3 19 1 14 1H8C3 1 1 3 1 8V14C1 19 3 21 8 21Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>            
+                                </div>
+                                <span>
+                                    Новости
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.02 1.83626L2.63 6.03626C1.73 6.73626 1 8.22626 1 9.35626V16.7663C1 19.0863 2.89 20.9863 5.21 20.9863H16.79C19.11 20.9863 21 19.0863 21 16.7763V9.49626C21 8.28626 20.19 6.73626 19.2 6.04626L13.02 1.71626C11.62 0.736256 9.37 0.786256 8.02 1.83626Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.5 10.4961L11.3 14.6961L9.7 12.2961L6.5 15.4961" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.5 10.4961H15.5V12.4961" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <svg>
+                                </div>
+                                <span>
+                                    Венчурные сделки
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 9H6C8 9 9 8 9 6V4C9 2 8 1 6 1H4C2 1 1 2 1 4V6C1 8 2 9 4 9Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 9H18C20 9 21 8 21 6V4C21 2 20 1 18 1H16C14 1 13 2 13 4V6C13 8 14 9 16 9Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16 21H18C20 21 21 20 21 18V16C21 14 20 13 18 13H16C14 13 13 14 13 16V18C13 20 14 21 16 21Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 21H6C8 21 9 20 9 18V16C9 14 8 13 6 13H4C2 13 1 14 1 16V18C1 20 2 21 4 21Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    Ноды
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.68011 10.9098L9.33011 11.3198L8.38013 15.1599C8.16013 16.0599 8.60011 16.3598 9.36011 15.8298L14.5401 12.2398C15.1701 11.7998 15.0801 11.2898 14.3301 11.0998L12.6801 10.6898L13.6301 6.84981C13.8501 5.94981 13.4101 5.64983 12.6501 6.17983L7.47012 9.76986C6.84012 10.2099 6.93011 10.7198 7.68011 10.9098Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    Автодропы
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.0488 1.53321L3.0288 5.46321C1.0988 6.72321 1.0988 9.54321 3.0288 10.8032L9.0488 14.7332C10.1288 15.4432 11.9088 15.4432 12.9888 14.7332L18.9788 10.8032C20.8988 9.54321 20.8988 6.73321 18.9788 5.47321L12.9888 1.54321C11.9088 0.82321 10.1288 0.82321 9.0488 1.53321Z" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.6289 12.083L4.6189 16.773C4.6189 18.043 5.5989 19.403 6.7989 19.803L9.9889 20.863C10.5389 21.043 11.4489 21.043 12.0089 20.863L15.1989 19.803C16.3989 19.403 17.3789 18.043 17.3789 16.773V12.133" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20.3987 14.0029V8.00293" stroke="white" stroke-width="1.35629" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    Академия
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.00007 21H15.0001C19.0201 21 19.7401 19.39 19.9501 17.43L20.7001 9.43C20.9701 6.99 20.2701 5 16.0001 5H6.00007C1.73007 5 1.03007 6.99 1.30007 9.43L2.05007 17.43C2.26007 19.39 2.98007 21 7.00007 21Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7 5V4.2C7 2.43 7 1 10.2 1H11.8C15 1 15 2.43 15 4.2V5" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13 12V13C13 13.01 13 13.01 13 13.02C13 14.11 12.99 15 11 15C9.02 15 9 14.12 9 13.03V12C9 11 9 11 10 11H12C13 11 13 11 13 12Z" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20.65 10C18.34 11.68 15.7 12.68 13 13.02" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1.62012 10.2705C3.87012 11.8105 6.41012 12.7405 9.00012 13.0305" stroke="white" stroke-width="1.35629" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    Бизнес Академия
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.0001 2H8.0001C6.0501 7.84 6.0501 14.16 8.0001 20H7.0001" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14 2C15.95 7.84 15.95 14.16 14 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 15V14C7.84 15.95 14.16 15.95 20 14V15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2 7.99961C7.84 6.04961 14.16 6.04961 20 7.99961" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    События
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.01 2.92031L18.91 5.54031C20.61 6.29031 20.61 7.53031 18.91 8.28031L13.01 10.9003C12.34 11.2003 11.24 11.2003 10.57 10.9003L4.67002 8.28031C2.97002 7.53031 2.97002 6.29031 4.67002 5.54031L10.57 2.92031C11.24 2.62031 12.34 2.62031 13.01 2.92031Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 11C3 11.84 3.63 12.81 4.4 13.15L11.19 16.17C11.71 16.4 12.3 16.4 12.81 16.17L19.6 13.15C20.37 12.81 21 11.84 21 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3 16C3 16.93 3.55 17.77 4.4 18.15L11.19 21.17C11.71 21.4 12.3 21.4 12.81 21.17L19.6 18.15C20.45 17.77 21 16.93 21 16" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    Промо
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">
+                                <div class="nav_item_icon">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 17.4356H12L7.54999 20.3956C6.88999 20.8356 6 20.3656 6 19.5656V17.4356C3 17.4356 1 15.4356 1 12.4356V6.43555C1 3.43555 3 1.43555 6 1.43555H16C19 1.43555 21 3.43555 21 6.43555V12.4356C21 15.4356 19 17.4356 16 17.4356Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.0001 10.3652V10.1553C11.0001 9.47527 11.4201 9.11526 11.8401 8.82526C12.2501 8.54526 12.66 8.18527 12.66 7.52527C12.66 6.60527 11.9201 5.86523 11.0001 5.86523C10.0801 5.86523 9.34009 6.60527 9.34009 7.52527" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.9955 12.7559H11.0045" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span>
+                                    Faq
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- main -->
+        <main>
+            <!-- new -->
+            <section class="autodrop">
+                <div class="main_container">
+                    <div class="title_top d-flex align-items-center justify-content-between">
+                        <h3 class="main_top_title">
+                            Автодропы
+                        </h3>
+                        <div class="autodrop_progress">
+                            <p>
+                                Количество аккаунтов: 7776
+                            </p>
+                            <div class="progress_in">
+                                <span class="progress_bar"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span>
+                                        0
+                                    </span>
+                                    <span>
+                                        10 000
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="links_btns">
+                        <a href="#" class="btn_black">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.7499 2.47473C11.4499 1.88473 12.5799 1.88473 13.2599 2.47473L14.8399 3.82473C15.1399 4.07473 15.7099 4.28473 16.1099 4.28473H17.8099C18.8699 4.28473 19.7399 5.15473 19.7399 6.21473V7.91473C19.7399 8.31473 19.9499 8.87473 20.1999 9.17473L21.5499 10.7547C22.1399 11.4547 22.1399 12.5847 21.5499 13.2647L20.1999 14.8447C19.9499 15.1447 19.7399 15.7047 19.7399 16.1047V17.8047C19.7399 18.8647 18.8699 19.7347 17.8099 19.7347H16.1099C15.7099 19.7347 15.1499 19.9447 14.8499 20.1947L13.2699 21.5447C12.5699 22.1347 11.4399 22.1347 10.7599 21.5447L9.17988 20.1947C8.87988 19.9447 8.30988 19.7347 7.91988 19.7347H6.16988C5.10988 19.7347 4.23988 18.8647 4.23988 17.8047V16.0947C4.23988 15.7047 4.03988 15.1347 3.78988 14.8447L2.43988 13.2547C1.85988 12.5647 1.85988 11.4447 2.43988 10.7547L3.78988 9.16473C4.03988 8.86473 4.23988 8.30473 4.23988 7.91473V6.22473C4.23988 5.16473 5.10988 4.29473 6.16988 4.29473H7.89988C8.29988 4.29473 8.85988 4.08473 9.15988 3.83473L10.7499 2.47473Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.5 15.965L12 8.08496L15.5 15.965" stroke="white" stroke-width="1.5" stroke-linejoin="bevel"/>
+                                <path d="M13.75 13.335H10.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Тестнет
+                        </a>
+                        <a href="#" class="btn_black active">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.1701 18.6944L21.3901 17.5844V14.8044M14.7201 9.80441L12.5001 10.9144L14.7201 9.80441ZM12.5001 10.9144L10.2801 9.80441L12.5001 10.9144ZM12.5001 10.9144V13.6944V10.9144ZM21.3901 6.46442L19.1701 7.57442L21.3901 6.46442ZM21.3901 6.46442L19.1701 5.35442L21.3901 6.46442ZM21.3901 6.46442V9.24442V6.46442ZM14.7201 3.13441L12.5001 2.02441L10.2801 3.13441H14.7201ZM3.61011 6.46442L5.83011 5.35442L3.61011 6.46442ZM3.61011 6.46442L5.83011 7.57442L3.61011 6.46442ZM3.61011 6.46442V9.24442V6.46442ZM12.5001 22.0244L10.2801 20.9144L12.5001 22.0244ZM12.5001 22.0244L14.7201 20.9144L12.5001 22.0244ZM12.5001 22.0244V19.2444V22.0244ZM5.83011 18.6944L3.61011 17.5844V14.8044L5.83011 18.6944Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Майнет
+                        </a>
+                        <a href="#" class="btn_black">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.2 19.0048H7.79995C7.37995 19.0048 6.90995 18.6748 6.76995 18.2748L2.62995 6.69477C2.03996 5.03477 2.72996 4.52477 4.14996 5.54477L8.04995 8.33477C8.69995 8.78477 9.43995 8.55477 9.71995 7.82477L11.48 3.13477C12.04 1.63477 12.97 1.63477 13.53 3.13477L15.29 7.82477C15.57 8.55477 16.31 8.78477 16.95 8.33477L20.61 5.72477C22.17 4.60477 22.92 5.17477 22.28 6.98477L18.24 18.2948C18.09 18.6748 17.62 19.0048 17.2 19.0048Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 22.0244H18" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 14.0244H15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Пул
+                        </a>
+                    </div>
+                    <div class="main_content">
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- new -->
+        </main>
+        <!-- main -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="main_container">
+                <div class="footer_in">
+                    <a href="/">
+                        <img src="./images/logo/footer_logo.svg" alt="">
+                    </a>
+                    <ul class="footer_link">
+                        <li>
+                            <a href="https://legendsgroup.xyz/en/doc/cookies">
+                                Политика использования файлов cookie
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Положение о рисках
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Политика конфиденциальности
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer_social">
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/social1.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/social2.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/social3.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/social4.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icons/social5.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+    </div>
+    
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper js -->
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+    <!-- js file -->
+</body>
+</html>
