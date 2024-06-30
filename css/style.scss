@@ -2290,9 +2290,15 @@ label,
     .autodrop_list {
         @include border-radius();
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         background: $color-black90;
         li {
             display: flex;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid $color-black70;
 
             h6 {
                 padding: 10px 0;
@@ -2300,7 +2306,6 @@ label,
                 font-weight: 400;
                 line-height: 32px;
                 color: $color-white100;
-                border-bottom: 1px solid $color-black70;
             }
         }
 
@@ -2308,19 +2313,15 @@ label,
         .autodrop_list_two,
         .autodrop_list_three {
             width: 420px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+        }
 
-            span {
-                padding: 10px 0;
-                border-bottom: 1px solid $color-black70;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 24px;
-                letter-spacing: -0.005em;
-                color: $color-white100;
-            }
+        span {
+            padding: 10px 0;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.005em;
+            color: $color-white100;
         }
 
         .autodrop_list_two {
