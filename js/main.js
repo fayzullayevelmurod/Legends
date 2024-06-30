@@ -1,8 +1,28 @@
-var swiper = new Swiper(".eventSwiper", {
+let swiper = new Swiper(".eventSwiper", {
     spaceBetween: 10,
     navigation: {
         nextEl: ".event-button-next",
         prevEl: ".event-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1.20,
+        },
+        993: {
+            slidesPerView: 3.10,
+        },
+        1200: {
+            slidesPerView: 4.20,
+        },
+    },
+});
+
+
+let swiper2 = new Swiper(".tarifSwiper", {
+    spaceBetween: 17,
+    navigation: {
+        nextEl: ".tarif_btn_next",
+        prevEl: ".tarif_btn_prev",
     },
     breakpoints: {
         640: {

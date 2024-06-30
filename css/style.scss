@@ -2443,6 +2443,55 @@ label,
 }
 // autodrop_pool_cards
 
+// tarif_title
+.tarif_title {
+    padding: 20px;
+    background: $color-black100;
+    @include border-radius();
+    @include flex-center();
+    justify-content: space-between;
+
+    h6 {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        color: $color-white100;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.005em;
+        color: $color-low-blue;
+    }
+
+    .btn_yellow {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+        @include flex-center();
+        gap: 10px;
+
+        &:hover {
+            .news_icon {
+                transform: rotate(42deg);
+            }
+        }
+
+        .news_icon {
+            width: 24px;
+            height: 24px;
+
+            svg {
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}
+// tarif_title
 
 // footer
 .footer {

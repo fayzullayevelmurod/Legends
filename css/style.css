@@ -1933,6 +1933,48 @@ label,
   width: 218px;
 }
 
+.tarif_title {
+  padding: 20px;
+  background: #000000;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tarif_title h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.tarif_title p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #646471;
+}
+.tarif_title .btn_yellow {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tarif_title .btn_yellow:hover .news_icon {
+  transform: rotate(42deg);
+}
+.tarif_title .btn_yellow .news_icon {
+  width: 24px;
+  height: 24px;
+}
+.tarif_title .btn_yellow .news_icon svg {
+  width: 10px;
+  height: 10px;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
