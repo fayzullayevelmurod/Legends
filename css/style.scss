@@ -1251,6 +1251,11 @@ label,
         .progress_block {
             gap: 15px;
 
+            .progress_wrapper {
+                margin-top: 0;
+                transform: translateY(-5px);
+            }
+
             .progress_in {
                 width: 100%;
             }
@@ -1268,6 +1273,67 @@ label,
             flex-direction: column;
             gap: 15px;
         }
+    }
+}
+
+.venture_totals {
+    display: flex;
+    gap: 20px;
+
+    .venture_totals_img {
+        @include flex-full-center();
+    }
+
+    .venture_totals_img,
+    .venture_totals_text {
+        width: 645px;
+        @include border-radius();
+        padding: 20px;
+        background: $color-black90;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .venture_totals_text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h6 {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        color: $color-white100;
+    }
+
+    li {
+        @include flex-center();
+        justify-content: space-between;
+    }
+
+    span,label {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.005em;
+        color: $color-white100;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn_yellow {
+        @include flex-center();
+        gap: 10px;
+        width: 100%;
     }
 }
 // venture

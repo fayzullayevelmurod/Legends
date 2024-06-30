@@ -983,6 +983,10 @@ label,
 .verture_deals_block_two .venture_deals_block_result .progress_block {
   gap: 15px;
 }
+.verture_deals_block_two .venture_deals_block_result .progress_block .progress_wrapper {
+  margin-top: 0;
+  transform: translateY(-5px);
+}
 .verture_deals_block_two .venture_deals_block_result .progress_block .progress_in {
   width: 100%;
 }
@@ -997,6 +1001,62 @@ label,
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.venture_totals {
+  display: flex;
+  gap: 20px;
+}
+.venture_totals .venture_totals_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.venture_totals .venture_totals_img,
+.venture_totals .venture_totals_text {
+  width: 645px;
+  border-radius: 32px;
+  padding: 20px;
+  background: #0A0A0C;
+}
+.venture_totals ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.venture_totals .venture_totals_text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.venture_totals h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.venture_totals li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.venture_totals span, .venture_totals label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+.venture_totals label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.venture_totals .btn_yellow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .venture_trading_title h4 {
@@ -2148,6 +2208,20 @@ label,
   .verture_deals_block_two .venture_deals_block_result .result_top,
   .verture_deals_block_two .venture_deals_block_result .result_bottom {
     width: 100%;
+  }
+  .venture_totals {
+    flex-direction: column;
+  }
+  .venture_totals .venture_totals_img {
+    height: 420px;
+  }
+  .venture_totals .venture_totals_img,
+  .venture_totals .venture_totals_text {
+    width: 100%;
+  }
+  .venture_totals .full_total {
+    flex-direction: column;
+    gap: 5px;
   }
   .venture_trading_cards {
     gap: 10px;

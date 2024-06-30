@@ -372,6 +372,24 @@
         }
     }
 
+    .venture_totals {
+        flex-direction: column;
+
+        .venture_totals_img {
+            height: 420px;
+        }
+
+        .venture_totals_img,
+        .venture_totals_text {
+            width: 100%;
+        }
+
+        .full_total {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
     .venture_trading {
         &_cards {
             gap: 10px;
