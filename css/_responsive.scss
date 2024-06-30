@@ -675,6 +675,16 @@
             }
         }
     }
+
+    .tarif_title {
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+
+        .btn_yellow {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {

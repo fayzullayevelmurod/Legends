@@ -20,19 +20,20 @@ let swiper = new Swiper(".eventSwiper", {
 
 let swiper2 = new Swiper(".tarifSwiper", {
     spaceBetween: 17,
+    loop: true,
     navigation: {
         nextEl: ".tarif_btn_next",
         prevEl: ".tarif_btn_prev",
     },
     breakpoints: {
-        640: {
-            slidesPerView: 1.20,
+        320: {
+            slidesPerView: 1.10,
         },
         993: {
-            slidesPerView: 3.10,
+            slidesPerView: 2.75,
         },
         1200: {
-            slidesPerView: 4.20,
+            slidesPerView: 3.74,
         },
     },
 });
