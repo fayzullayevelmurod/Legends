@@ -118,6 +118,31 @@
         }
     }
 
+    .verture_deals_block_two {
+        .venture_deals_block_result {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .result_top {
+                width: 340px;
+                gap: 40px;
+            }
+
+            .result_bottom {
+                width: 340px;
+            }
+
+            .venture_btns {
+                flex-direction: column;
+
+                .btn_white,
+                .btn_yellow {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .venture_trading {
         &_cards {
             gap: 10px;
@@ -332,6 +357,17 @@
                 .btn_yellow {
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    .verture_deals_block_two {
+        .venture_deals_block_result {
+            flex-direction: column-reverse;
+
+            .result_top,
+            .result_bottom {
+                width: 100%;
             }
         }
     }

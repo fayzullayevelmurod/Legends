@@ -1238,6 +1238,38 @@ label,
         }
     }
 }
+
+.verture_deals_block_two {
+    .venture_deals_block_result {
+        gap: 20px;
+
+
+        .text_yellow {
+            color: $color-yellow;
+        }
+
+        .progress_block {
+            gap: 15px;
+
+            .progress_in {
+                width: 100%;
+            }
+        }
+
+        .btn_yellow,
+        .btn_white {
+            @include flex-center();
+            gap: 10px;
+        }
+
+        .result_top,
+        .result_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
 // venture
 
 // venture_trading

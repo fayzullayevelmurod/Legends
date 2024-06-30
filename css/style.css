@@ -974,6 +974,31 @@ label,
   flex: 1;
 }
 
+.verture_deals_block_two .venture_deals_block_result {
+  gap: 20px;
+}
+.verture_deals_block_two .venture_deals_block_result .text_yellow {
+  color: #E0C170;
+}
+.verture_deals_block_two .venture_deals_block_result .progress_block {
+  gap: 15px;
+}
+.verture_deals_block_two .venture_deals_block_result .progress_block .progress_in {
+  width: 100%;
+}
+.verture_deals_block_two .venture_deals_block_result .btn_yellow,
+.verture_deals_block_two .venture_deals_block_result .btn_white {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.verture_deals_block_two .venture_deals_block_result .result_top,
+.verture_deals_block_two .venture_deals_block_result .result_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .venture_trading_title h4 {
   font-size: 32px;
   font-weight: 400;
@@ -1963,6 +1988,24 @@ label,
   .venture_deals_block_text {
     max-width: 100%;
   }
+  .verture_deals_block_two .venture_deals_block_result {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .verture_deals_block_two .venture_deals_block_result .result_top {
+    width: 340px;
+    gap: 40px;
+  }
+  .verture_deals_block_two .venture_deals_block_result .result_bottom {
+    width: 340px;
+  }
+  .verture_deals_block_two .venture_deals_block_result .venture_btns {
+    flex-direction: column;
+  }
+  .verture_deals_block_two .venture_deals_block_result .venture_btns .btn_white,
+  .verture_deals_block_two .venture_deals_block_result .venture_btns .btn_yellow {
+    width: 100%;
+  }
   .venture_trading_cards {
     gap: 10px;
   }
@@ -2097,6 +2140,13 @@ label,
   }
   .venture_deals_block_result .venture_btns .btn_white,
   .venture_deals_block_result .venture_btns .btn_yellow {
+    width: 100%;
+  }
+  .verture_deals_block_two .venture_deals_block_result {
+    flex-direction: column-reverse;
+  }
+  .verture_deals_block_two .venture_deals_block_result .result_top,
+  .verture_deals_block_two .venture_deals_block_result .result_bottom {
     width: 100%;
   }
   .venture_trading_cards {
