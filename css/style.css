@@ -1841,6 +1841,12 @@ label,
 .autodrop_pool_cards .autodrop_list .autodrop_list_three {
   text-align: right;
 }
+.autodrop_pool_cards .autodrop_list .autodrop_list_three br {
+  display: none;
+}
+.autodrop_pool_cards .new_main_block .btn_yellow {
+  width: 218px;
+}
 
 .footer {
   padding: 50px 0 40px 0;
@@ -2030,6 +2036,9 @@ label,
   .news_card span {
     top: 15px;
     right: 9px;
+  }
+  .new .title_top {
+    flex-direction: row !important;
   }
   .new .main_content {
     gap: 14px;
@@ -2274,6 +2283,15 @@ label,
   }
   .autodrop_pool_cards .autodrop_top_block .autodrop_top_main {
     width: 100%;
+  }
+  .autodrop_pool_cards .new_main_block .btn_yellow {
+    width: 100%;
+  }
+  .autodrop_pool_cards .autodrop_list li {
+    gap: 2px;
+  }
+  .autodrop_pool_cards .autodrop_list .autodrop_list_three br {
+    display: block;
   }
 }
 @media only screen and (max-width: 768px) {

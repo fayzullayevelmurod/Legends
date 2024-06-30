@@ -237,6 +237,10 @@
 
     .new {
 
+        .title_top {
+            flex-direction: row !important;
+        }
+
         .main_content {
             gap: 14px;
         }
@@ -594,6 +598,26 @@
 
             .autodrop_top_main {
                 width: 100%;
+            }
+        }
+
+        .new_main_block {
+            .btn_yellow {
+                width: 100%;
+            }
+        }
+
+        .autodrop_list {
+
+            li {
+                gap: 2px;
+            }
+
+            .autodrop_list_three {
+    
+                br {
+                    display: block;
+                }
             }
         }
     }
