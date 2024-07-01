@@ -2082,6 +2082,100 @@ label,
   color: #646471;
 }
 
+.unlock_title {
+  margin-bottom: 20px;
+}
+.unlock_title h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.unlock_title .back_btn {
+  background: #000000;
+}
+
+.unlock_lists {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.unlock_list {
+  border-radius: 24px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+}
+.unlock_list .unlock_list_text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.unlock_list .unlock_list_text img {
+  width: 50px;
+  height: 50px;
+}
+.unlock_list .unlock_list_text h6 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+.unlock_list .unlock_list_text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #FFFFFF;
+}
+.unlock_list .unlock_list_text p span {
+  border-radius: 15px;
+  padding: 6px 14px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+  background: #FFFFFF;
+}
+.unlock_list .btn_black,
+.unlock_list .btn_yellow,
+.unlock_list .btn_white {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.unlock_list .btn_black svg path {
+  transition: 0.3s ease;
+}
+.unlock_list .btn_black:hover svg path {
+  stroke: #000000;
+}
+
+.list_yellow {
+  background: #E0C170;
+}
+.list_yellow .unlock_list_text h6 {
+  color: #000000;
+}
+.list_yellow .unlock_list_text p {
+  color: #000000;
+}
+.list_yellow .unlock_list_text p span {
+  color: #FFFFFF;
+  background: #000000;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -2572,6 +2666,21 @@ label,
     gap: 20px;
   }
   .tarif_title .btn_yellow {
+    width: 100%;
+  }
+  .unlock_top {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .unlock_list {
+    flex-direction: column;
+    padding: 10px;
+    align-items: start;
+    gap: 20px;
+  }
+  .unlock_list .btn_black,
+  .unlock_list .btn_white,
+  .unlock_list .btn_yellow {
     width: 100%;
   }
 }

@@ -685,6 +685,24 @@
             width: 100%;
         }
     }
+
+    .unlock_top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .unlock_list {
+        flex-direction: column;
+        padding: 10px;
+        align-items: start;
+        gap: 20px;
+
+        .btn_black,
+        .btn_white,
+        .btn_yellow {
+            width: 100%;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
