@@ -2740,6 +2740,105 @@ label,
 }
 // unlock_title
 
+// node_wrapper
+.node_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .node_main_img {
+        padding: 65px 10px;
+        @include flex-full-center();
+        background: $color-black90;
+        @include border-radius();
+    }
+
+    .key {
+        display: flex;
+        justify-content: space-between;
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 728px;
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.005em;
+                color: $color-white100;
+
+                span {
+                    color: $color-yellow;
+                }
+            }
+        }
+
+        &_in {
+            h6 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                @include flex-center();
+                gap: 5px;
+                color: $color-white100;
+            }
+
+            .key_inputs {
+                margin: 11px 0 15px 0;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.005em;
+                color: $color-white100;
+            }
+        }
+    }
+
+    .node_tarif {
+        display: flex;
+        gap: 10px;
+
+        &_block {
+            width: calc(100% / 2 - 5px);
+            @include border-radius();
+            background: $color-black90;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_text {
+            max-width: 382px;
+            padding: 28px 20px;
+            h6 {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                color: $color-yellow;
+                margin-bottom: 23px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.005em;
+                color: $color-white100;
+            }
+        }
+
+        &_img {
+            flex-shrink: 0;
+            max-width: 270px;
+        }
+    }
+}
+// node_wrapper
+
 // footer
 .footer {
     padding: 50px 0 40px 0;
