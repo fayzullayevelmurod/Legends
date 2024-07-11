@@ -491,142 +491,431 @@
             </a>
           </div>
 
-          <div class="links_btns tabs">
-            <button class="btn_white tab_item">
-              Все проекты
-            </button>
-            <button class="btn_black tab_item">
-              Мои проекты
-            </button>
-          </div>
-          <div class="team_boxes">
-            <div class="d-flex align-items-center justify-content-between">
-              <h4 class="main_title">BInary</h4>
-              <div class="search_box">
-                <input type="search" placeholder="Поиск">
-                <img class="search_icon" src="images/icons/search-icon.svg" alt="search">
+          <ul class="links_btns" id="myTab" role="tablist">
+            <li role="presentation">
+              <button class="active btn_white" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true"> Все проекты</button>
+            </li>
+            <li role="presentation">
+              <button class="btn_yellow" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false">Мои проекты</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="team_boxes">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="main_title">BInary</h4>
+                  <div class="search_box">
+                    <input type="search" placeholder="Поиск">
+                    <img class="search_icon" src="images/icons/search-icon.svg" alt="search">
+                  </div>
+                </div>
+                <div class="cards">
+                  <div class="autodrop_pool_cards">
+                    <ul class="autodrop_list">
+                      <li>
+                        <h6 class="autodrop_list_one">
+                          Linear Level
+                        </h6>
+                        <h6 class="autodrop_list_two">
+                          Users
+                        </h6>
+                        <h6 class="autodrop_list_three">
+                          Active Users
+                        </h6>
+                      </li>
+                      <li>
+                        <span class="autodrop_list_one">
+                          1 линия
+                        </span>
+                        <span class="autodrop_list_two">
+                          27
+                        </span>
+                        <span class="autodrop_list_three">
+                          14
+                        </span>
+                      </li>
+                      <li>
+                        <span class="autodrop_list_one">
+                          1 линия
+                        </span>
+                        <span class="autodrop_list_two">
+                          27
+                        </span>
+                        <span class="autodrop_list_three">
+                          14
+                        </span>
+                      </li>
+                      <li>
+                        <span class="autodrop_list_one">
+                          1 линия
+                        </span>
+                        <span class="autodrop_list_two">
+                          27
+                        </span>
+                        <span class="autodrop_list_three">
+                          14
+                        </span>
+                      </li>
+                      <li>
+                        <span class="autodrop_list_one">
+                          1 линия
+                        </span>
+                        <span class="autodrop_list_two">
+                          27
+                        </span>
+                        <span class="autodrop_list_three">
+                          14
+                        </span>
+                      </li>
+                      <li>
+                        <span class="autodrop_list_one">
+                          1 линия
+                        </span>
+                        <span class="autodrop_list_two">
+                          27
+                        </span>
+                        <span class="autodrop_list_three">
+                          14
+                        </span>
+                      </li>
+                      <li>
+                        <span class="autodrop_list_one">
+                          1 линия
+                        </span>
+                        <span class="autodrop_list_two">
+                          27
+                        </span>
+                        <span class="autodrop_list_three">
+                          14
+                        </span>
+                      </li>
+                      <li>
+                        <span class="autodrop_list_one">
+                          1 линия
+                        </span>
+                        <span class="autodrop_list_two">
+                          27
+                        </span>
+                        <span class="autodrop_list_three">
+                          14
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right_card">
+                    <h4 class="main_title">Общая статистика:</h4>
+                    <ul>
+                      <li>
+                        <span>Пользователи в 7 линейных уровнях:</span>
+                        <span>3347</span>
+                      </li>
+                      <li>
+                        <span>Всего пользователей в бинаре:</span>
+                        <span>390</span>
+                      </li>
+                      <li>
+                        <span>Пользователи в левой/правой ветке:</span>
+                        <span>0/390</span>
+                      </li>
+                      <li>
+                        <span>LV слева/справа:</span>
+                        <span>0/256 050</span>
+                      </li>
+                    </ul>
+                    <div class="btns">
+                      <a class="btn_yellow" href="#!">Статусы партнеров слева</a>
+                      <a class="btn_white" href="#!">Статусы партнеров справа</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="cards">
-              <div class="autodrop_pool_cards">
-                <ul class="autodrop_list">
-                  <li>
-                    <h6 class="autodrop_list_one">
-                      Linear Level
-                    </h6>
-                    <h6 class="autodrop_list_two">
-                      Users
-                    </h6>
-                    <h6 class="autodrop_list_three">
-                      Active Users
-                    </h6>
-                  </li>
-                  <li>
-                    <span class="autodrop_list_one">
-                      1 линия
-                    </span>
-                    <span class="autodrop_list_two">
-                      27
-                    </span>
-                    <span class="autodrop_list_three">
-                      14
-                    </span>
-                  </li>
-                  <li>
-                    <span class="autodrop_list_one">
-                      1 линия
-                    </span>
-                    <span class="autodrop_list_two">
-                      27
-                    </span>
-                    <span class="autodrop_list_three">
-                      14
-                    </span>
-                  </li>
-                  <li>
-                    <span class="autodrop_list_one">
-                      1 линия
-                    </span>
-                    <span class="autodrop_list_two">
-                      27
-                    </span>
-                    <span class="autodrop_list_three">
-                      14
-                    </span>
-                  </li>
-                  <li>
-                    <span class="autodrop_list_one">
-                      1 линия
-                    </span>
-                    <span class="autodrop_list_two">
-                      27
-                    </span>
-                    <span class="autodrop_list_three">
-                      14
-                    </span>
-                  </li>
-                  <li>
-                    <span class="autodrop_list_one">
-                      1 линия
-                    </span>
-                    <span class="autodrop_list_two">
-                      27
-                    </span>
-                    <span class="autodrop_list_three">
-                      14
-                    </span>
-                  </li>
-                  <li>
-                    <span class="autodrop_list_one">
-                      1 линия
-                    </span>
-                    <span class="autodrop_list_two">
-                      27
-                    </span>
-                    <span class="autodrop_list_three">
-                      14
-                    </span>
-                  </li>
-                  <li>
-                    <span class="autodrop_list_one">
-                      1 линия
-                    </span>
-                    <span class="autodrop_list_two">
-                      27
-                    </span>
-                    <span class="autodrop_list_three">
-                      14
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div class="right_card">
-                <h4 class="main_title">Общая статистика:</h4>
-                <ul>
-                  <li>
-                    <span>Пользователи в 7 линейных уровнях:</span>
-                    <span>3347</span>
-                  </li>
-                  <li>
-                    <span>Всего пользователей в бинаре:</span>
-                    <span>390</span>
-                  </li>
-                  <li>
-                    <span>Пользователи в левой/правой ветке:</span>
-                    <span>0/390</span>
-                  </li>
-                  <li>
-                    <span>LV слева/справа:</span>
-                    <span>0/256 050</span>
-                  </li>
-                </ul>
-                <div class="btns">
-                  <a class="btn_yellow" href="#!">Статусы партнеров слева</a>
-                  <a class="btn_white" href="#!">Статусы партнеров справа</a>
+              <div class="referrals_section">
+                <h4 class="main_title">Мои рефералы</h4>
+                <div class="referrals_box">
+                  <div class="user_box">
+                    <div class="user_img_box">
+                      <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
+                      <button class="user_seach">
+                        <img src="images/icons/user-search.svg" alt="user search">
+                      </button>
+                    </div>
+                    <h5 class="user_name">Александр Дроздов</h5>
+                    <div class="d-flex align-items-center gap-1 justify-content-center">
+                      <div class="badge">
+                        <h6>12 000 LV</h6>
+                      </div>
+                      <div class="badge">
+                        <h6>0 LV</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between user_box_second">
+                    <div class="user_box">
+                      <div class="user_img_box">
+                        <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
+                        <button class="user_seach">
+                          <img src="images/icons/user-search.svg" alt="user search">
+                        </button>
+                      </div>
+                      <h5 class="user_name">Александр Дроздов</h5>
+                      <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="badge">
+                          <h6>12 000 LV</h6>
+                        </div>
+                        <div class="badge">
+                          <h6>0 LV</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_box">
+                      <div class="user_img_box">
+                        <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
+                        <button class="user_seach">
+                          <img src="images/icons/user-search.svg" alt="user search">
+                        </button>
+                      </div>
+                      <h5 class="user_name">Александр Дроздов</h5>
+                      <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="badge">
+                          <h6>12 000 LV</h6>
+                        </div>
+                        <div class="badge">
+                          <h6>0 LV</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between user_box_last">
+                    <div class="user_box">
+                      <div class="user_img_box">
+                        <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
+                        <button class="user_seach">
+                          <img src="images/icons/user-search.svg" alt="user search">
+                        </button>
+                      </div>
+                      <h5 class="user_name">Александр Дроздов</h5>
+                      <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="badge">
+                          <h6>12 000 LV</h6>
+                        </div>
+                        <div class="badge">
+                          <h6>0 LV</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_box">
+                      <div class="user_img_box">
+                        <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
+                        <button class="user_seach">
+                          <img src="images/icons/user-search.svg" alt="user search">
+                        </button>
+                      </div>
+                      <h5 class="user_name">Александр Дроздов</h5>
+                      <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="badge">
+                          <h6>12 000 LV</h6>
+                        </div>
+                        <div class="badge">
+                          <h6>0 LV</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_box">
+                      <div class="user_img_box">
+                        <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
+                        <button class="user_seach">
+                          <img src="images/icons/user-search.svg" alt="user search">
+                        </button>
+                      </div>
+                      <h5 class="user_name">Александр Дроздов</h5>
+                      <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="badge">
+                          <h6>12 000 LV</h6>
+                        </div>
+                        <div class="badge">
+                          <h6>0 LV</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user_box">
+                      <div class="user_img_box">
+                        <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
+                        <button class="user_seach">
+                          <img src="images/icons/user-search.svg" alt="user search">
+                        </button>
+                      </div>
+                      <h5 class="user_name">Александр Дроздов</h5>
+                      <div class="d-flex align-items-center gap-1 justify-content-center">
+                        <div class="badge">
+                          <h6>12 000 LV</h6>
+                        </div>
+                        <div class="badge">
+                          <h6>0 LV</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="linear-view">
+                <h4 class="main_title">Linear</h4>
+                <div class="filter">
+                  <button class="btn_black active">1 линия</button>
+                  <button class="btn_black">2 линия</button>
+                  <button class="btn_black">3 линия</button>
+                  <button class="btn_black">4 линия</button>
+                  <button class="btn_black">5 линия</button>
+                  <button class="btn_black">6 линия</button>
+                  <button class="btn_black">7 линия</button>
+                </div>
 
+                <div class="autodrop_pool_cards">
+                  <ul class="autodrop_list">
+                    <li>
+                      <h6 class="autodrop_list_one">
+                        Name
+                      </h6>
+                      <h6 class="autodrop_list_two">
+                        Created at
+                      </h6>
+                      <h6 class="autodrop_list_three">
+                        Package
+                      </h6>
+                      <h6 class="autodrop_list_three">
+                        Pocket Universe
+                      </h6>
+                      <h6 class="autodrop_list_three">
+                        In other projects
+                      </h6>
+                    </li>
+                    <li>
+                      <span class="autodrop_list_one">
+                        Alexey Umrilov
+                      </span>
+                      <span class="autodrop_list_two">
+                        15.04.24
+                      </span>
+                      <span class="autodrop_list_three">
+                        Optima
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                    </li>
+                    <li>
+                      <span class="autodrop_list_one">
+                        Alexey Umrilov
+                      </span>
+                      <span class="autodrop_list_two">
+                        15.04.24
+                      </span>
+                      <span class="autodrop_list_three">
+                        Optima
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                    </li>
+                    <li>
+                      <span class="autodrop_list_one">
+                        Alexey Umrilov
+                      </span>
+                      <span class="autodrop_list_two">
+                        15.04.24
+                      </span>
+                      <span class="autodrop_list_three">
+                        Optima
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                    </li>
+                    <li>
+                      <span class="autodrop_list_one">
+                        Alexey Umrilov
+                      </span>
+                      <span class="autodrop_list_two">
+                        15.04.24
+                      </span>
+                      <span class="autodrop_list_three">
+                        Optima
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                    </li>
+                    <li>
+                      <span class="autodrop_list_one">
+                        Alexey Umrilov
+                      </span>
+                      <span class="autodrop_list_two">
+                        15.04.24
+                      </span>
+                      <span class="autodrop_list_three">
+                        Optima
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                    </li>
+                    <li>
+                      <span class="autodrop_list_one">
+                        Alexey Umrilov
+                      </span>
+                      <span class="autodrop_list_two">
+                        15.04.24
+                      </span>
+                      <span class="autodrop_list_three">
+                        Optima
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                    </li>
+                    <li>
+                      <span class="autodrop_list_one">
+                        Alexey Umrilov
+                      </span>
+                      <span class="autodrop_list_two">
+                        15.04.24
+                      </span>
+                      <span class="autodrop_list_three">
+                        Optima
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                      <span class="autodrop_list_three">
+                        Transfer to Account
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
