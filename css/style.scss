@@ -3298,6 +3298,85 @@ label,
 .gap-10 {
   gap: 10px;
 }
+
+//magazine page
+.magazine {
+  .transaction_log {
+    border-radius: 32px;
+    background: $color-black80;
+    padding: 20px 14px;
+    color: $color-white100;
+  }
+  .autodrop_pool_cards {
+    margin-top: 20px;
+  }
+  .selects {
+    display: flex;
+    gap: 8px;
+  }
+  .custom_select {
+    max-width: 150px;
+    padding: 8px 8px 8px 18px;
+    background: $color-black70;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+    width: fit-content;
+    input {
+      cursor: pointer;
+      background: transparent;
+      width: 100%;
+      color: $color-white100;
+      &::placeholder {
+        color: $color-white100;
+      }
+    }
+    svg {
+      transition: all 0.2s linear;
+    }
+    &.active {
+      border-radius: 12px 12px 0 0;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    .select_option {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding-top: 10px;
+      background: $color-black70;
+      border-radius: 0 0 12px 12px;
+      padding: 8px 18px;
+      flex-direction: column;
+      row-gap: 10px;
+      cursor: pointer;
+      display: none;
+      &.show {
+        display: flex;
+      }
+    }
+    .option_item {
+      color: $color-white70;
+      &:hover {
+        color: $color-white100;
+      }
+    }
+  }
+  .autodrop_list_three {
+    text-align: center !important;
+
+    &.last {
+      text-align: right !important;
+    }
+  }
+}
 // footer
 .footer {
   padding: 50px 0 40px 0;
