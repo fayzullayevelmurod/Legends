@@ -2496,6 +2496,217 @@ label,
   text-align: center;
 }
 
+.personal_area_page .personal_area {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding: 40px 20px 20px 30px;
+  border-radius: 32px;
+  background: #101015;
+  color: #ffffff;
+}
+.personal_area_page .top_box {
+  border-bottom: 1px solid #2a2a31;
+  padding-bottom: 30px;
+}
+.personal_area_page .login {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding-top: 24px;
+}
+.personal_area_page .login .col-6 {
+  row-gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.personal_area_page .login label {
+  align-items: start;
+}
+.personal_area_page .login input {
+  text-align: left;
+  width: 360px;
+}
+.personal_area_page .upload_photo .btn_yellow {
+  margin: 10px 0 20px 0;
+}
+.personal_area_page .upload_photo h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #646471;
+}
+.personal_area_page .btn_white,
+.personal_area_page .btn_yellow {
+  color: #101015;
+}
+.personal_area_page .custom_select {
+  position: relative;
+  border-radius: 24px;
+  width: 360px;
+}
+.personal_area_page .custom_select input {
+  border-radius: inherit;
+  border-radius: 24px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+.personal_area_page .custom_select .arrow-down {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22px;
+  transition: all 0.2s linear;
+}
+.personal_area_page .custom_select.active input {
+  border-radius: 24px 24px 0 0;
+}
+.personal_area_page .custom_select.active .arrow-down {
+  transform: rotate(180deg);
+}
+.personal_area_page .custom_select .select_option {
+  background: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 24px 24px;
+  transition: all 0.2s linear;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+.personal_area_page .custom_select .select_option.show {
+  transform: scaleY(1);
+}
+.personal_area_page .custom_select .option_item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #0a0a0c;
+  padding: 10px 13px;
+  cursor: pointer;
+}
+.personal_area_page .custom_select .option_item:first-child {
+  padding-top: 0;
+}
+.personal_area_page .language_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.personal_area_page .change_password .login {
+  row-gap: 17px;
+}
+.personal_area_page .change_password .settings-notification {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.personal_area_page .change_password .settings-notification .box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+.personal_area_page .change_password .settings-notification p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+}
+.personal_area_page .change_password .copy_box {
+  position: relative;
+  max-width: 440px;
+  width: 100%;
+  margin-top: 16px;
+}
+.personal_area_page .change_password .copy_box input {
+  padding-left: 9px;
+  width: 100%;
+  background: #ffffff;
+  height: 40px;
+  border-radius: 12px;
+  width: 100%;
+  color: #101015;
+}
+.personal_area_page .change_password .copy_box input::-moz-placeholder {
+  color: #101015;
+}
+.personal_area_page .change_password .copy_box input::placeholder {
+  color: #101015;
+}
+.personal_area_page .change_password .copy_box img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 14px;
+  cursor: pointer;
+  z-index: 1;
+  background: #ffffff;
+}
+.personal_area_page .change_password .password_box {
+  position: relative;
+}
+.personal_area_page .change_password .password_box img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 19px;
+  cursor: pointer;
+  background: #ffffff;
+  z-index: 1;
+}
+.personal_area_page .auth_box {
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 32px;
+  border: 1px solid #000000;
+  background: #0a0a0c;
+}
+.personal_area_page .auth_box .content {
+  padding: 40px 0;
+}
+.personal_area_page .auth_box .content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  padding-top: 18px;
+}
+.personal_area_page .auth_box .login {
+  padding-top: 35px;
+}
+.personal_area_page .auth_box input,
+.personal_area_page .auth_box button {
+  width: 300px;
+  text-align: center;
+}
+.personal_area_page .auth_box input::-moz-placeholder, .personal_area_page .auth_box button::-moz-placeholder {
+  font-size: 12px;
+}
+.personal_area_page .auth_box input::placeholder,
+.personal_area_page .auth_box button::placeholder {
+  font-size: 12px;
+}
+
+.btn_white.sm,
+.btn_yellow.sm {
+  font-size: 12px;
+  line-height: 16px;
+  width: 200px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
