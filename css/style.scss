@@ -2930,6 +2930,16 @@ label,
         color: $color-white100;
       }
     }
+    .btns {
+      display: flex;
+      gap: 10px;
+      padding-top: 22px;
+      a {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
   }
 }
 
