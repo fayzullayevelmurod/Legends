@@ -15,7 +15,8 @@ img {
   max-width: 100%;
 }
 
-span, label {
+span,
+label {
   display: inline-block;
 }
 
@@ -26,7 +27,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 
 input {
@@ -43,6 +44,13 @@ button {
 
 address {
   font-style: normal;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
 }
 
 .wrapper {
@@ -89,7 +97,7 @@ label,
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main_content {
   background: #101015;
@@ -99,7 +107,7 @@ label,
 .main_input {
   height: 50px;
   border-radius: 12px;
-  background: #FFFFFF;
+  background: #ffffff;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -116,32 +124,32 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  background: #E0C170;
+  background: #e0c170;
   transition: 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .btn_yellow:hover {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .btn_blue {
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 17px;
   border-radius: 50px;
-  background: #086AD4;
+  background: #086ad4;
   transition: 0.3s ease;
 }
 .btn_blue:hover {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
 }
 .btn_black {
-  color: #FFFFFF;
+  color: #ffffff;
   width: 218px;
   height: 50px;
   border-radius: 50px;
@@ -149,7 +157,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  background: #1B1B20;
+  background: #1b1b20;
   transition: 0.3s ease;
   display: flex;
   align-items: center;
@@ -157,7 +165,7 @@ label,
   gap: 8px;
 }
 .btn_black:hover {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
 }
 .btn_white {
@@ -168,14 +176,14 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  background: #FFFFFF;
+  background: #ffffff;
   transition: 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .btn_white:hover {
-  background: #E0C170;
+  background: #e0c170;
 }
 
 .linear_text {
@@ -215,7 +223,7 @@ label,
   justify-content: center;
   width: 51px;
   height: 51px;
-  background: #1B1B20;
+  background: #1b1b20;
   transition: 0.3s ease;
 }
 .pagination a span {
@@ -223,13 +231,13 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .pagination a:hover {
   background: #232327;
 }
 .pagination a.active {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .pagination a.active span {
   color: #101015;
@@ -247,7 +255,7 @@ label,
   background: #101015;
 }
 .news_icon svg path {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .title_top {
@@ -266,7 +274,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header {
@@ -305,25 +313,25 @@ label,
   transition: 0.3s ease;
 }
 .header .nav_item a:hover svg path {
-  stroke: #E0C170;
+  stroke: #e0c170;
 }
 .header .nav_item a:active svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .header .nav_item a:active span {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .header .nav_item a:active .nav_item_icon {
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 .header .nav_item a.active svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .header .nav_item a.active span {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .header .nav_item a.active .nav_item_icon {
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 .header .nav_item_icon {
   display: flex;
@@ -332,7 +340,7 @@ label,
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  background: #0A0A0C;
+  background: #0a0a0c;
   transition: 0.3s ease;
 }
 .header .nav_item span {
@@ -356,7 +364,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .header_user_img {
   display: flex;
@@ -371,7 +379,7 @@ label,
   width: 100%;
   height: 25px;
   border-radius: 32px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .header_bottom {
   display: none;
@@ -398,7 +406,7 @@ label,
   padding: 20px 40px 40px 40px;
 }
 .login .main_title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
@@ -414,7 +422,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .login input {
   text-align: center;
@@ -439,7 +447,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .login p a {
   text-decoration: underline;
@@ -451,13 +459,13 @@ label,
 }
 .news_card {
   width: calc(33.3333333333% - 14px);
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   overflow: hidden;
 }
 .news_card:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .news_card:hover .news_icon svg path {
   fill: #000000;
@@ -474,14 +482,14 @@ label,
   line-height: 16px;
   border-radius: 14px;
   background: #101015;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .news_card .status {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
 }
 .news_card span.active {
-  background: #E0C170;
+  background: #e0c170;
 }
 .news_card .new_card_text {
   padding: 10px 10px 42px 24px;
@@ -495,7 +503,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .news_card .news_icon {
   flex-shrink: 0;
@@ -528,7 +536,7 @@ label,
 .new_main_block {
   border-radius: 32px;
   padding: 15px 23px 33px 23px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .new_social {
   justify-content: end;
@@ -557,7 +565,7 @@ label,
   gap: 80px;
   border-radius: 32px;
   padding: 20px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .new_block_text {
   display: flex;
@@ -573,7 +581,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #E0C170;
+  color: #e0c170;
 }
 .new_block p,
 .new_block li {
@@ -581,7 +589,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 553px;
 }
 .new_block ul {
@@ -605,17 +613,17 @@ label,
   list-style-type: decimal;
 }
 .new_block_yellow {
-  background: #E0C170;
+  background: #e0c170;
 }
 .new_block_yellow .btn_white:hover {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .new_block_yellow .new_block_img {
   background: transparent;
 }
 .new_block_yellow h6,
 .new_block_yellow li {
-  color: #0A0A0C;
+  color: #0a0a0c;
 }
 
 .promo_cards {
@@ -624,7 +632,7 @@ label,
 }
 .promo_card {
   width: calc(33.3333333333% - 7px);
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   display: flex;
   flex-direction: column;
@@ -635,7 +643,7 @@ label,
 }
 .promo_card:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .promo_card:hover .news_icon svg path {
   fill: #000000;
@@ -654,7 +662,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .promo .news_icon {
   flex-shrink: 0;
@@ -683,7 +691,7 @@ label,
 }
 .academy a {
   border-radius: 32px;
-  background: #0A0A0C;
+  background: #0a0a0c;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -702,7 +710,7 @@ label,
   align-items: center;
   justify-content: center;
   transition: 0.3s ease;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .academy .news_icon svg path {
   fill: #000000;
@@ -715,27 +723,27 @@ label,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1B1B20;
+  background: #1b1b20;
 }
 .academy h6 {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .academy p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #2A2A31;
+  color: #2a2a31;
 }
 
 .faq .academy_list_item a {
   align-items: center;
 }
 .faq .academy_list_item a:hover .news_icon {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .faq .academy_list_item a:hover .news_icon svg path {
   fill: #101015;
@@ -744,7 +752,7 @@ label,
   background: #101015;
 }
 .faq .news_icon svg path {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .academy_cards_blocks {
@@ -752,7 +760,7 @@ label,
 }
 .academy_cards .academy_card {
   width: calc(33.3333333333% - 7px);
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   overflow: hidden;
 }
@@ -761,7 +769,7 @@ label,
 }
 .academy_cards .academy_card:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .academy_cards .academy_card:hover .news_icon svg path {
   fill: #000000;
@@ -791,7 +799,7 @@ label,
   line-height: 24px;
   letter-spacing: -0.005em;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .academy_cards .academy_card_title {
   justify-content: space-between;
@@ -802,13 +810,13 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .events_blocks {
   overflow: hidden;
   display: flex;
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   justify-content: space-between;
 }
@@ -819,7 +827,7 @@ label,
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .events_text p {
   max-width: 637px;
@@ -827,7 +835,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 18px 0 35px 0;
 }
 .events_text .events_btns {
@@ -870,7 +878,7 @@ label,
 .events_item a {
   width: 100%;
   height: 100%;
-  background: #0A0A0C;
+  background: #0a0a0c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -878,7 +886,7 @@ label,
 }
 .events_item a:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .events_item a:hover .news_icon svg path {
   fill: #000000;
@@ -887,7 +895,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .venture_deals_block {
@@ -913,7 +921,7 @@ label,
 }
 .venture_deals_block_result {
   width: 633px;
-  background: #0A0A0C;
+  background: #0a0a0c;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -939,7 +947,7 @@ label,
   overflow: hidden;
   height: 5px;
   border-radius: 24px;
-  background: #FFFFFF;
+  background: #ffffff;
   position: relative;
 }
 .venture_deals_block_result .progress_wrapper .progress_in {
@@ -949,13 +957,13 @@ label,
   height: 100%;
   width: 90%;
   border-radius: 24px;
-  background: #E0C170;
+  background: #e0c170;
 }
 .venture_deals_block h6 {
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #E0C170;
+  color: #e0c170;
 }
 .venture_deals_block p,
 .venture_deals_block li {
@@ -963,7 +971,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .venture_deals_block .venture_btns {
   display: flex;
@@ -978,7 +986,7 @@ label,
   gap: 20px;
 }
 .verture_deals_block_two .venture_deals_block_result .text_yellow {
-  color: #E0C170;
+  color: #e0c170;
 }
 .verture_deals_block_two .venture_deals_block_result .progress_block {
   gap: 15px;
@@ -1017,7 +1025,7 @@ label,
   width: 645px;
   border-radius: 32px;
   padding: 20px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .venture_totals ul {
   display: flex;
@@ -1033,19 +1041,20 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .venture_totals li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.venture_totals span, .venture_totals label {
+.venture_totals span,
+.venture_totals label {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .venture_totals label {
   display: flex;
@@ -1063,7 +1072,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .venture_trading_title .btn_yellow {
   gap: 7px;
@@ -1082,7 +1091,7 @@ label,
 }
 .venture_trading_card {
   width: calc(33.3333333333% - 14px);
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   overflow: hidden;
 }
@@ -1111,13 +1120,13 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .venture_trading_card li h6 {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .venture_trading_card .btn_yellow {
   width: 100%;
@@ -1129,7 +1138,7 @@ label,
 }
 .node_cards .links_btns .btn_black svg path {
   transition: 0.3s ease;
-  stroke: #FFFFFF;
+  stroke: #ffffff;
 }
 .node_cards .links_btns .btn_black:hover svg path {
   stroke: black;
@@ -1138,7 +1147,7 @@ label,
   stroke: #000000;
 }
 .node_cards .links_btns .btn_black.active {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
 }
 .node_cards .node_card_title {
@@ -1148,7 +1157,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_cards .node_card_title .btn_white {
   justify-content: space-between;
@@ -1176,10 +1185,10 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_cards .venture_trading_card:hover .news_icon {
-  background: #FFFFFF;
+  background: #ffffff;
   transform: rotate(41deg);
 }
 .node_cards .venture_trading_card:hover .news_icon svg path {
@@ -1194,7 +1203,7 @@ label,
 .node_trading_card {
   width: calc(50% - 5px);
   border-radius: 32px;
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   overflow: hidden;
 }
@@ -1212,11 +1221,11 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_trading_card:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .node_trading_card:hover .news_icon svg path {
   fill: #000000;
@@ -1233,7 +1242,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .node_block .main_content {
@@ -1248,24 +1257,27 @@ label,
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_block h6 {
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_block img {
   width: 100%;
   border-radius: 32px;
 }
-.node_block li, .node_block p, .node_block a, .node_block span {
+.node_block li,
+.node_block p,
+.node_block a,
+.node_block span {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_block .node_block_link {
   text-decoration: underline;
@@ -1297,7 +1309,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #E0C170;
+  color: #e0c170;
   display: flex;
   align-items: center;
   gap: 9px;
@@ -1307,7 +1319,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .event_text {
   display: flex;
@@ -1319,14 +1331,14 @@ label,
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
-  color: #E0C170;
+  color: #e0c170;
 }
 .event_text p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .event .event_slider_title {
   padding: 0 20px;
@@ -1338,7 +1350,7 @@ label,
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .event .eventSwiper {
   width: 100%;
@@ -1347,13 +1359,13 @@ label,
   height: 202px;
   border-radius: 32px;
   padding: 20px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .event .eventSwiper h6 {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 11px;
 }
 .event .eventSwiper p {
@@ -1361,14 +1373,14 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .event .event_tarif h3 {
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
   margin-bottom: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .event .event_tarif_cards {
   display: flex;
@@ -1379,7 +1391,7 @@ label,
   text-align: center;
   width: calc(25% - 5px);
   padding: 20px;
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   display: flex;
   flex-direction: column;
@@ -1389,7 +1401,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 4px;
 }
 .event .event_tarif_card .btn_yellow {
@@ -1401,25 +1413,25 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .faq_block .faq_title {
   padding: 70px 45px;
   border-radius: 32px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .faq_block .faq_title h3 {
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .faq_block .autodrop_title {
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 .faq_block .faq {
@@ -1432,7 +1444,7 @@ label,
 }
 .faq_block .faq .accordion-single-item {
   border-radius: 24px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .faq_block .faq .accordion-single-title {
   transition: 0.3s ease;
@@ -1441,12 +1453,12 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   position: relative;
   margin: 0;
   padding: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -1477,7 +1489,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .faq_block .faq .accordion-single-item.is-open .accordion-single-content {
   max-height: 150px;
@@ -1493,14 +1505,14 @@ label,
   transition: 0.3s ease;
 }
 .autodrop .links_btns .btn_black:hover svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .autodrop .links_btns .btn_black.active {
-  background: #FFFFFF;
-  color: #0A0A0C;
+  background: #ffffff;
+  color: #0a0a0c;
 }
 .autodrop .links_btns .btn_black.active svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .autodrop_progress {
   display: flex;
@@ -1512,13 +1524,13 @@ label,
   font-weight: 400;
   line-height: 16px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_progress .progress_in {
   position: relative;
   height: 1px;
   width: 320px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .autodrop_progress .progress_in .progress_bar {
   position: absolute;
@@ -1526,7 +1538,7 @@ label,
   left: 0;
   width: 70%;
   height: 100%;
-  background: #E0C170;
+  background: #e0c170;
 }
 .autodrop_progress ul li {
   display: flex;
@@ -1547,7 +1559,7 @@ label,
 }
 .autodrop_block {
   width: 100%;
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
   display: flex;
   align-items: center;
@@ -1560,7 +1572,7 @@ label,
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_block p {
   margin: 18px 0 35px 0;
@@ -1568,7 +1580,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 637px;
 }
 .autodrop_block .btn_white {
@@ -1620,7 +1632,7 @@ label,
 }
 .autodrop_bottom .autodrop_block:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .autodrop_bottom .autodrop_block:hover .news_icon svg path {
   fill: #000000;
@@ -1629,7 +1641,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_mail {
   display: flex;
@@ -1640,7 +1652,7 @@ label,
   width: calc(50% - 11px);
   border-radius: 32px;
   padding: 15px 24px;
-  background: #0A0A0C;
+  background: #0a0a0c;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1653,7 +1665,7 @@ label,
 }
 .autodrop_mail_link:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .autodrop_mail_link:hover .news_icon svg path {
   fill: #000000;
@@ -1662,14 +1674,14 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_mail p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #D9D9D9;
+  color: #d9d9d9;
   margin: 4px 0;
 }
 .autodrop_mail span {
@@ -1684,14 +1696,14 @@ label,
   transition: 0.3s ease;
 }
 .autodrop_mainet .links_btns .btn_black:hover svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .autodrop_mainet .links_btns .btn_black.active {
-  background: #FFFFFF;
-  color: #0A0A0C;
+  background: #ffffff;
+  color: #0a0a0c;
 }
 .autodrop_mainet .links_btns .btn_black.active svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .autodrop_mainet_blocks {
   display: flex;
@@ -1717,7 +1729,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_mainet_block span {
   font-size: 16px;
@@ -1734,14 +1746,14 @@ label,
   transition: 0.3s ease;
 }
 .autodrop_pool_cards .links_btns .btn_black:hover svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .autodrop_pool_cards .links_btns .btn_black.active {
-  background: #FFFFFF;
-  color: #0A0A0C;
+  background: #ffffff;
+  color: #0a0a0c;
 }
 .autodrop_pool_cards .links_btns .btn_black.active svg path {
-  stroke: #0A0A0C;
+  stroke: #0a0a0c;
 }
 .autodrop_pool_cards_progress {
   display: flex;
@@ -1753,13 +1765,13 @@ label,
   font-weight: 400;
   line-height: 16px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards_progress .progress_in {
   position: relative;
   height: 1px;
   width: 320px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .autodrop_pool_cards_progress .progress_in .progress_bar {
   position: absolute;
@@ -1767,7 +1779,7 @@ label,
   left: 0;
   width: 70%;
   height: 100%;
-  background: #E0C170;
+  background: #e0c170;
 }
 .autodrop_pool_cards_progress ul li {
   display: flex;
@@ -1792,11 +1804,11 @@ label,
   overflow: hidden;
   width: calc(33.3333333333% - 7px);
   border-radius: 32px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .autodrop_pool_cards .autodrop_pool_card:hover .news_icon {
   transform: rotate(42deg);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .autodrop_pool_cards .autodrop_pool_card:hover .news_icon svg path {
   fill: #000000;
@@ -1817,7 +1829,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards .btn_yellow {
   width: 100%;
@@ -1846,19 +1858,19 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards .autodrop_top_block_text p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards .autodrop_top_block .autodrop_top_main {
   width: 353px;
   border-radius: 32px;
-  background: #0A0A0C;
+  background: #0a0a0c;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -1875,16 +1887,16 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards .autodrop_top_block .autodrop_top_main h6 {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards .autodrop_top_block .autodrop_top_main h3 {
-  color: #E0C170;
+  color: #e0c170;
 }
 .autodrop_pool_cards .autodrop_list {
   border-radius: 32px;
@@ -1892,20 +1904,20 @@ label,
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: #0A0A0C;
+  background: #0a0a0c;
 }
 .autodrop_pool_cards .autodrop_list li {
   display: flex;
   gap: 10px;
   padding: 10px 0;
-  border-bottom: 1px solid #1B1B20;
+  border-bottom: 1px solid #1b1b20;
 }
 .autodrop_pool_cards .autodrop_list li h6 {
   padding: 10px 0;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards .autodrop_list .autodrop_list_one,
 .autodrop_pool_cards .autodrop_list .autodrop_list_two,
@@ -1918,7 +1930,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .autodrop_pool_cards .autodrop_list .autodrop_list_two {
   text-align: center;
@@ -1945,7 +1957,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .tarif_title p {
   font-size: 16px;
@@ -1986,7 +1998,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .tarif_slider_title .tarif_slider_btns {
   flex-shrink: 0;
@@ -1996,7 +2008,7 @@ label,
 }
 
 .tarif_card {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 32px;
   padding: 13px 24px 24px 24px;
 }
@@ -2060,23 +2072,27 @@ label,
   background: linear-gradient(87.73deg, rgb(77, 77, 77) 0.798%, rgb(149, 149, 149) 23.085%, rgb(96, 96, 96) 61.22%, rgb(70, 70, 70) 99.85%);
 }
 .grey_card svg path {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
-.grey_card h6, .grey_card h5, .grey_card span {
-  color: #FFFFFF;
+.grey_card h6,
+.grey_card h5,
+.grey_card span {
+  color: #ffffff;
 }
 .grey_card p {
-  color: #B0B0B0;
+  color: #b0b0b0;
 }
 
 .black_card {
   background: linear-gradient(90deg, rgb(29, 29, 29), rgb(2, 2, 2) 22.5%, rgb(20, 20, 20) 61%, rgb(19, 19, 19) 100%);
 }
 .black_card svg path {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
-.black_card h6, .black_card h5, .black_card span {
-  color: #FFFFFF;
+.black_card h6,
+.black_card h5,
+.black_card span {
+  color: #ffffff;
 }
 .black_card p {
   color: #646471;
@@ -2121,7 +2137,7 @@ label,
   font-size: 32px;
   font-weight: 400;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 2px;
 }
 .unlock_list .unlock_list_text p {
@@ -2133,7 +2149,7 @@ label,
   display: flex;
   align-items: center;
   gap: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .unlock_list .unlock_list_text p span {
   border-radius: 15px;
@@ -2142,7 +2158,7 @@ label,
   font-weight: 400;
   line-height: 16px;
   color: #000000;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .unlock_list .btn_black,
 .unlock_list .btn_yellow,
@@ -2163,7 +2179,7 @@ label,
 }
 
 .list_yellow {
-  background: #E0C170;
+  background: #e0c170;
 }
 .list_yellow .unlock_list_text h6 {
   color: #000000;
@@ -2172,7 +2188,7 @@ label,
   color: #000000;
 }
 .list_yellow .unlock_list_text p span {
-  color: #FFFFFF;
+  color: #ffffff;
   background: #000000;
 }
 
@@ -2186,7 +2202,7 @@ label,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0A0A0C;
+  background: #0a0a0c;
   border-radius: 32px;
 }
 .node_wrapper .key {
@@ -2204,10 +2220,10 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_wrapper .key_text p span {
-  color: #E0C170;
+  color: #e0c170;
 }
 .node_wrapper .key_in h6 {
   font-size: 24px;
@@ -2216,7 +2232,7 @@ label,
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_wrapper .key_in .key_inputs {
   margin: 11px 0 15px 0;
@@ -2226,7 +2242,7 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_wrapper .node_tarif {
   display: flex;
@@ -2235,7 +2251,7 @@ label,
 .node_wrapper .node_tarif_block {
   width: calc(50% - 5px);
   border-radius: 32px;
-  background: #0A0A0C;
+  background: #0a0a0c;
   display: flex;
   justify-content: space-between;
 }
@@ -2247,7 +2263,7 @@ label,
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  color: #E0C170;
+  color: #e0c170;
   margin-bottom: 23px;
 }
 .node_wrapper .node_tarif_text p {
@@ -2255,11 +2271,95 @@ label,
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .node_wrapper .node_tarif_img {
   flex-shrink: 0;
   max-width: 270px;
+}
+
+.team_page .search_box {
+  position: relative;
+  width: 320px;
+}
+.team_page .search_box .search_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22px;
+  cursor: pointer;
+  z-index: 1;
+  background: #fff;
+}
+.team_page .search_box input {
+  padding: 13px 22px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  border-radius: 37.5px;
+  width: 100%;
+  color: #101015;
+}
+.team_page .search_box input::-moz-placeholder {
+  color: #101015;
+}
+.team_page .search_box input::placeholder {
+  color: #101015;
+}
+.team_page .team_boxes {
+  background-color: #101015;
+  padding: 20px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.team_page .main_title {
+  color: #fff;
+}
+.team_page .autodrop_list {
+  background: #000000;
+}
+.team_page .autodrop_list li {
+  padding: 0;
+}
+.team_page .cards {
+  display: flex;
+  gap: 36px;
+}
+.team_page .autodrop_pool_cards {
+  max-width: 747px;
+  width: 100%;
+}
+.team_page .right_card {
+  background: #000000;
+  padding: 20px;
+  border-radius: 32px;
+  max-width: 517px;
+  width: 100%;
+}
+.team_page .right_card .main_title {
+  color: #e0c170;
+}
+.team_page .right_card ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding-top: 11px;
+}
+.team_page .right_card li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.team_page .right_card li span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
 }
 
 .footer {
