@@ -3146,7 +3146,7 @@ label,
     flex-direction: column;
     row-gap: 24px;
     padding-top: 24px;
-    .col-6 {
+    .col-xl-6 {
       row-gap: 12px;
       display: flex;
       flex-direction: column;
@@ -3185,7 +3185,6 @@ label,
       border-radius: 24px;
       cursor: pointer;
       user-select: none;
-      transition: all 0.2s linear;
       width: 100%;
     }
     .arrow-down {
@@ -3210,12 +3209,11 @@ label,
       left: 0;
       width: 100%;
       border-radius: 0 0 24px 24px;
-      transition: all 0.2s linear;
-      transform: scaleY(0);
-      transform-origin: top;
+      display: none;
+      z-index: 10;
 
       &.show {
-        transform: scaleY(1);
+        display: block;
       }
     }
     .option_item {
@@ -3239,6 +3237,7 @@ label,
   .change_password {
     .login {
       row-gap: 17px;
+      margin-bottom: 22px;
     }
     .settings-notification {
       display: flex;

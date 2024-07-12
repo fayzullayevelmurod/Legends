@@ -2553,7 +2553,7 @@ label,
   row-gap: 24px;
   padding-top: 24px;
 }
-.personal_area_page .login .col-6 {
+.personal_area_page .login .col-xl-6 {
   row-gap: 12px;
   display: flex;
   flex-direction: column;
@@ -2591,7 +2591,6 @@ label,
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  transition: all 0.2s linear;
   width: 100%;
 }
 .personal_area_page .custom_select .arrow-down {
@@ -2614,12 +2613,11 @@ label,
   left: 0;
   width: 100%;
   border-radius: 0 0 24px 24px;
-  transition: all 0.2s linear;
-  transform: scaleY(0);
-  transform-origin: top;
+  display: none;
+  z-index: 10;
 }
 .personal_area_page .custom_select .select_option.show {
-  transform: scaleY(1);
+  display: block;
 }
 .personal_area_page .custom_select .option_item {
   font-size: 16px;
@@ -2640,6 +2638,7 @@ label,
 }
 .personal_area_page .change_password .login {
   row-gap: 17px;
+  margin-bottom: 22px;
 }
 .personal_area_page .change_password .settings-notification {
   display: flex;
@@ -3285,6 +3284,24 @@ label,
   .team_page .linear-view .filter .btn_black {
     width: 100%;
   }
+  .personal_area_page .login .col-xl-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .personal_area_page .change_password .login {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+  .change_password .row {
+    row-gap: 60px;
+  }
+  .personal_area_page .login .row {
+    row-gap: 15px;
+  }
+  .personal_area_page .personal_area {
+    padding: 20px 14px;
+  }
 }
 @media only screen and (max-width: 993px) {
   .main_container {
@@ -3626,6 +3643,21 @@ label,
     margin-left: -10px;
     margin-right: -10px;
   }
+  .personal_area_page .auth_box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .personal_area_page .auth_box .content {
+    order: 1;
+  }
+  .personal_area_page .auth_box {
+    padding: 0 10px;
+    margin-top: 0;
+  }
+  .personal_area_page .auth_box input,
+  .personal_area_page .auth_box button {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .main_container {
@@ -3691,5 +3723,54 @@ label,
   }
   .team_page .linear-view .autodrop_pool_cards .autodrop_list::-webkit-scrollbar {
     display: none;
+  }
+  .personal_area_page .btn_white,
+  .personal_area_page .login input,
+  .personal_area_page .custom_select,
+  .personal_area_page .select_box,
+  .personal_area_page .btn_yellow,
+  .personal_area_page .change_password .password_box,
+  .personal_area .btn_blue,
+  .personal_area_page .change_password .copy_box {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .personal_area_page .btn_white input,
+  .personal_area_page .login input input,
+  .personal_area_page .custom_select input,
+  .personal_area_page .select_box input,
+  .personal_area_page .btn_yellow input,
+  .personal_area_page .change_password .password_box input,
+  .personal_area .btn_blue input,
+  .personal_area_page .change_password .copy_box input {
+    width: 100%;
+  }
+  .personal_area .top_box .col-md-4 {
+    order: -1;
+    margin-bottom: 40px;
+  }
+  .personal_area .top_box .main_title {
+    font-size: 24px;
+  }
+  .personal_area_page .personal_area {
+    gap: 10px;
+  }
+  .personal_area_page .change_password .settings-notification {
+    row-gap: 0;
+  }
+  .personal_area_page .change_password .settings-notification .main_title {
+    padding-bottom: 13px;
+  }
+  .personal_area_page .auth_box {
+    margin-top: 10px;
+  }
+  .personal_area_page .change_password .settings-notification {
+    border-bottom: 1px solid #2a2a31;
+    padding-bottom: 30px;
+  }
+  .personal_area .row > * {
+    padding-left: 0;
+    padding-right: 0;
   }
 }/*# sourceMappingURL=style.css.map */
