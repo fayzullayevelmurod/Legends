@@ -481,13 +481,20 @@
         <div class="main_container">
           <div class="title_top d-flex align-items-center justify-content-between">
             <h3 class="main_top_title">
-              Личный кабинет
+              Моя команда
             </h3>
             <a href="#" class="back_btn d-flex align-items-center">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.13025 18.3354H15.1302C17.8902 18.3354 20.1302 16.0954 20.1302 13.3354C20.1302 10.5754 17.8902 8.33545 15.1302 8.33545H4.13025"
+                  stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.43024 10.8353L3.87024 8.27533L6.43024 5.71533" stroke="white" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
               <span>
-                Настройка аккаунта
+                Назад
               </span>
-              <img src="./images/icons/settings_icon.svg" alt="" width="24" height="24">
             </a>
           </div>
 
@@ -624,6 +631,24 @@
                         <span>0/256 050</span>
                       </li>
                     </ul>
+
+                    <div class="copy_clipboard">
+                      <div>
+                        <span class="text-white">Левая ссылка</span>
+                        <div class="copy_box d-flex align-items-center justify-content-between">
+                          <span>https://legendsgroup.xyz/ru/sgsers4tes4t34g</span>
+                          <img src="images/icons/copy-icon2.svg" alt="">
+                        </div>
+                      </div>
+                      <div>
+                        <span class="text-white">Правая ссылка</span>
+                        <div class="copy_box d-flex align-items-center justify-content-between">
+                          <span>https://legendsgroup.xyz/ru/sgsers4tes4t34g</span>
+                          <img src="images/icons/copy-icon2.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="btns">
                       <a class="btn_yellow" href="#!">Статусы партнеров слева</a>
                       <a class="btn_white" href="#!">Статусы партнеров справа</a>
@@ -634,7 +659,23 @@
               <div class="referrals_section">
                 <h4 class="main_title">Мои рефералы</h4>
                 <div class="referrals_box">
-                  <div class="user_box">
+                  <div class="copy_clipboard">
+                    <div>
+                      <span class="text-white">Левая ссылка</span>
+                      <div class="copy_box d-flex align-items-center justify-content-between">
+                        <span>https://legendsgroup.xyz/ru/sgsers4tes4t34g</span>
+                        <img src="images/icons/copy-icon2.svg" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <span class="text-white">Правая ссылка</span>
+                      <div class="copy_box d-flex align-items-center justify-content-between">
+                        <span>https://legendsgroup.xyz/ru/sgsers4tes4t34g</span>
+                        <img src="images/icons/copy-icon2.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user_box first">
                     <div class="user_img_box">
                       <img class="user-img" src="images/header_user.png" alt="" width="195" height="195">
                       <button class="user_seach">
@@ -763,15 +804,43 @@
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div class="linear-view">
-                <h4 class="main_title">Linear</h4>
+                <div class="d-flex align-items-center justify-content-between">
+                  <h4 class="main_title">Linear</h4>
+                  <div>
+                    <button class="filter-button-prev">
+                      <img src="images/icons/prev_icon_white.svg" alt="">
+                    </button>
+                    <button class="filter-button-next">
+                      <img src="images/icons/next_icon_white.svg" alt="">
+                    </button>
+                  </div>
+                </div>
                 <div class="filter">
-                  <button class="btn_black active">1 линия</button>
-                  <button class="btn_black">2 линия</button>
-                  <button class="btn_black">3 линия</button>
-                  <button class="btn_black">4 линия</button>
-                  <button class="btn_black">5 линия</button>
-                  <button class="btn_black">6 линия</button>
-                  <button class="btn_black">7 линия</button>
+                  <div class="swiper filter_swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <button class="btn_black active">1 линия</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="btn_black">2 линия</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="btn_black">3 линия</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="btn_black">4 линия</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="btn_black">5 линия</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="btn_black">6 линия</button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="btn_black">7 линия</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="autodrop_pool_cards">

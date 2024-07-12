@@ -97,3 +97,31 @@ try {
     }
   }
 } catch (error) {}
+
+// filter_swiper
+try {
+  let swiper = new Swiper(".filter_swiper", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".filter-button-next",
+      prevEl: ".filter-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2.3,
+      },
+      480: {
+        slidesPerView: 3,
+      },
+      640: {
+        slidesPerView: 4,
+      },
+      993: {
+        slidesPerView: 6,
+      },
+      1200: {
+        slidesPerView: 7,
+      },
+    },
+  });
+} catch (error) {}

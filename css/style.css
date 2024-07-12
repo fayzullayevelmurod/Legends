@@ -2308,6 +2308,32 @@ label,
   max-width: 270px;
 }
 
+.team_page .copy_clipboard {
+  display: flex;
+  padding-top: 35px;
+  gap: 16px;
+  flex-direction: column;
+}
+.team_page .copy_clipboard img {
+  cursor: pointer;
+}
+.team_page .copy_clipboard > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.team_page .copy_clipboard .copy_box {
+  padding: 13px 10px;
+  border-radius: 12px;
+  background: #101015;
+}
+.team_page .copy_clipboard .copy_box span {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+}
 .team_page .search_box {
   position: relative;
   width: 320px;
@@ -2358,6 +2384,7 @@ label,
 }
 .team_page .autodrop_list {
   background: #000000;
+  height: 100%;
 }
 .team_page .autodrop_list li {
   padding: 0;
@@ -2366,6 +2393,10 @@ label,
   display: flex;
   gap: 36px;
   padding-top: 20px;
+  align-items: stretch;
+}
+.team_page .cards > div {
+  height: unset;
 }
 .team_page .autodrop_pool_cards {
   max-width: 747px;
@@ -2409,6 +2440,13 @@ label,
   font-size: 12px;
   line-height: 16px;
 }
+.team_page .referrals_section .copy_clipboard {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.team_page .referrals_section .copy_box {
+  width: 475px;
+}
 .team_page .referrals_section .main_title {
   padding: 20px 0;
 }
@@ -2429,6 +2467,9 @@ label,
 .team_page .referrals_section .user_box {
   color: #ffffff;
   text-align: center;
+}
+.team_page .referrals_section .user_box.first {
+  margin-top: -60px;
 }
 .team_page .referrals_section .user_box .user_img_box {
   position: relative;
@@ -2465,13 +2506,10 @@ label,
   padding-bottom: 8px;
 }
 .team_page .linear-view .filter {
-  display: flex;
-  gap: 12px;
   padding: 18px;
   border-radius: 24px;
   background: #000000;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 1088px;
   margin: 20px auto;
 }
 .team_page .linear-view .filter .btn_black {
@@ -3188,6 +3226,65 @@ label,
   .autodrop_mainet_block {
     width: 100%;
   }
+  .team_page .tab-content {
+    padding: 14px 20px;
+  }
+  .team_page .copy_clipboard {
+    gap: 10px;
+  }
+  .team_page .copy_clipboard > div {
+    width: 100%;
+  }
+  .team_page .referrals_section .copy_box {
+    max-width: 100%;
+    width: 100%;
+  }
+  .team_page .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .team_page .cards > div {
+    max-width: 100%;
+  }
+  .team_page .cards .copy_clipboard {
+    flex-direction: row;
+  }
+  .team_page .cards .copy_clipboard > div {
+    width: 100%;
+  }
+  .team_page .referrals_box {
+    overflow-x: auto;
+  }
+  .team_page .referrals_box::-webkit-scrollbar {
+    display: none;
+  }
+  .team_page .user_box_last {
+    gap: 54px;
+    justify-content: center !important;
+  }
+  .team_page .user_box {
+    min-width: 257px;
+    max-width: 257px;
+    margin: 0 auto;
+  }
+  .team_page .user_box_second {
+    gap: 176px;
+    justify-content: center !important;
+  }
+  .referrals_section .user_box.first {
+    margin-top: 34px !important;
+  }
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list_three {
+    width: 150px;
+  }
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list .autodrop_list_one,
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list .autodrop_list_two,
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list .autodrop_list_three {
+    width: 180px;
+  }
+  .team_page .linear-view .filter .btn_black {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 993px) {
   .main_container {
@@ -3519,6 +3616,16 @@ label,
   .unlock_list .btn_yellow {
     width: 100%;
   }
+  .team_page .referrals_section .copy_clipboard {
+    display: none;
+  }
+  .team_page .referrals_section .user_box.first {
+    margin-top: 0 !important;
+  }
+  .team_page .tab-content {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .main_container {
@@ -3565,5 +3672,24 @@ label,
   }
   .login .btn_yellow {
     width: 100%;
+  }
+  .team_page .search_box {
+    max-width: 201px;
+  }
+  .team_page .cards .copy_clipboard {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .team_page .right_card .btns {
+    flex-direction: column;
+  }
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list li {
+    min-width: 900px;
+  }
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list {
+    overflow-x: auto;
+  }
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list::-webkit-scrollbar {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

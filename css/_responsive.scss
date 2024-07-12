@@ -1,775 +1,871 @@
 @media only screen and (max-width: 1200px) {
-    .main {
-        &_container {
-            max-width: calc(100% - 110px);
-        }
-
-        &_content {
-            padding: 20px 11px;
-        }
-    }
-    
-    .header {
-
-        &_top {
-            justify-content: space-between;
-        }
-
-        .nav {
-            width: 100%;
-            &_link {
-
-                width: 100%;
-                justify-content: space-between;
-            }
-        }
-
-        &_bottom {
-            margin-top: 25px;
-            display: flex;
-        }
-
-        .dektop_menu {
-            display: none;
-        }
+  .main {
+    &_container {
+      max-width: calc(100% - 110px);
     }
 
-    .news {
-        &_card {
-            width: calc(100% / 2 - 7px);
-        }
+    &_content {
+      padding: 20px 11px;
+    }
+  }
 
-        &_cards {
-            gap: 14px;
-        }
+  .header {
+    &_top {
+      justify-content: space-between;
     }
 
-    .new {
-        &_block {
-            flex-direction: column;
-            gap: 30px;
+    .nav {
+      width: 100%;
 
-            .new_block_img {
-                width: 100%;
-                height: 429px;
-            }
-
-            h6,
-            p,
-            li {
-                max-width: 100%;
-            }
-        }
-
-        &_block_yellow {
-            flex-direction: column-reverse;
-
-            .new_block_img {
-                height: 266px;
-                @include flex-full-center;
-            }
-        }
+      &_link {
+        width: 100%;
+        justify-content: space-between;
+      }
     }
 
-    .academy_cards {
-        .academy_card {
-            width: calc(100% / 2 - 5px);
-        }
+    &_bottom {
+      margin-top: 25px;
+      display: flex;
     }
 
-    .events {
-        &_blocks {
-            flex-direction: column-reverse;
-        }
+    .dektop_menu {
+      display: none;
+    }
+  }
 
-        &_img {
-            max-width: 100%;
-        }
-
-        &_text {
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-        }
+  .news {
+    &_card {
+      width: calc(100% / 2 - 7px);
     }
 
-    .venture_deals_block {
+    &_cards {
+      gap: 14px;
+    }
+  }
+
+  .new {
+    &_block {
+      flex-direction: column;
+      gap: 30px;
+
+      .new_block_img {
+        width: 100%;
+        height: 429px;
+      }
+
+      h6,
+      p,
+      li {
+        max-width: 100%;
+      }
+    }
+
+    &_block_yellow {
+      flex-direction: column-reverse;
+
+      .new_block_img {
+        height: 266px;
+        @include flex-full-center;
+      }
+    }
+  }
+
+  .academy_cards {
+    .academy_card {
+      width: calc(100% / 2 - 5px);
+    }
+  }
+
+  .events {
+    &_blocks {
+      flex-direction: column-reverse;
+    }
+
+    &_img {
+      max-width: 100%;
+    }
+
+    &_text {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .venture_deals_block {
+    flex-direction: column-reverse;
+
+    &_result {
+      width: 100%;
+      gap: 15px;
+
+      .venture_btns {
+        margin-top: 14px;
+
+        .btn_white,
+        .btn_yellow {
+          width: 300px;
+          flex: none;
+        }
+      }
+    }
+
+    &_text {
+      max-width: 100%;
+    }
+  }
+
+  .verture_deals_block_two {
+    .venture_deals_block_result {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .result_top {
+        width: 340px;
+        gap: 40px;
+      }
+
+      .result_bottom {
+        width: 340px;
+      }
+
+      .venture_btns {
+        flex-direction: column;
+
+        .btn_white,
+        .btn_yellow {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .venture_trading {
+    &_cards {
+      gap: 10px;
+    }
+
+    &_card {
+      width: calc(100% / 3 - 7px);
+    }
+  }
+
+  .node_block {
+    .venture_trading_card {
+      width: calc(100% / 2 - 5px);
+    }
+
+    &_img {
+      height: 417px;
+      object-fit: cover;
+    }
+  }
+
+  .node_block {
+    .main_content {
+      padding: 10px 20px;
+    }
+
+    &_in {
+      gap: 10px;
+    }
+  }
+
+  .event {
+    &_in {
+      gap: 40px;
+    }
+
+    .event_tarif {
+      &_card {
+        width: calc(100% / 3 - 7px);
+      }
+    }
+  }
+
+  .autodrop {
+    &_blocks {
+      .autodrop_block {
         flex-direction: column-reverse;
+        text-align: center;
 
-        &_result {
-            width: 100%;
-            gap: 15px;
-
-            .venture_btns {
-                margin-top: 14px;
-
-                .btn_white,
-                .btn_yellow {
-                    width: 300px;
-                    flex: none;
-                }
-            }
+        .btn_white {
+          margin: 0 auto;
         }
 
         &_text {
-            max-width: 100%;
+          padding: 26px 0;
         }
+      }
     }
 
-    .verture_deals_block_two {
-        .venture_deals_block_result {
-            flex-direction: row;
-            justify-content: space-between;
-
-            .result_top {
-                width: 340px;
-                gap: 40px;
-            }
-
-            .result_bottom {
-                width: 340px;
-            }
-
-            .venture_btns {
-                flex-direction: column;
-
-                .btn_white,
-                .btn_yellow {
-                    width: 100%;
-                }
-            }
-        }
+    &_bottom {
+      .autodrop_block {
+        text-align: left;
+        flex-direction: row;
+      }
     }
+  }
 
-    .venture_trading {
-        &_cards {
-            gap: 10px;
-        }
-
-        &_card {
-            width: calc(100% / 3 - 7px);
-        }
+  .autodrop_mainet {
+    &_block {
+      width: calc(100%);
     }
+  }
 
-    .node_block {
-        .venture_trading_card {
-            width: calc(100% / 2 - 5px);
-        }
-
-        &_img {
-            height: 417px;
-            object-fit: cover;
-        }
+  //   team page
+  .team_page {
+    .tab-content {
+      padding: 14px 20px;
     }
-
-    .node_block {
-        .main_content {
-            padding: 10px 20px;
-        }
-
-        &_in {
-            gap: 10px;
-        }
+    .copy_clipboard {
+      gap: 10px;
     }
-
-    .event {
-        &_in {
-            gap: 40px;
-        }
-
-        .event_tarif {
-            &_card {
-                width: calc(100% / 3 - 7px);
-            }
-        }
+    .copy_clipboard > div {
+      width: 100%;
     }
-
-    .autodrop {
-        &_blocks {
-            .autodrop_block {
-                flex-direction: column-reverse;
-                text-align: center;
-
-                .btn_white {
-                    margin: 0 auto;
-                }
-
-                &_text {
-                    padding: 26px 0;
-                }
-            }
-        }
-
-        &_bottom {
-            .autodrop_block {
-                text-align: left;
-                flex-direction: row;
-            }
-        }
+    .referrals_section .copy_box {
+      max-width: 100%;
+      width: 100%;
     }
+    .cards {
+      flex-direction: column;
+      gap: 20px;
 
-    .autodrop_mainet {
-        &_block {
-            width: calc(100%);
+      & > div {
+        max-width: 100%;
+      }
+      .copy_clipboard {
+        flex-direction: row;
+
+        & > div {
+          width: 100%;
         }
+      }
     }
+    .referrals_box {
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .user_box_last {
+      gap: 54px;
+      justify-content: center !important;
+    }
+    .user_box {
+      min-width: 257px;
+      max-width: 257px;
+      margin: 0 auto;
+    }
+    .user_box_second {
+      gap: 176px;
+      justify-content: center !important;
+    }
+  }
+  .referrals_section .user_box.first {
+    margin-top: 34px !important;
+  }
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list_three {
+    width: 150px;
+  }
+  .team_page .linear-view {
+    .autodrop_pool_cards .autodrop_list .autodrop_list_one,
+    .autodrop_pool_cards .autodrop_list .autodrop_list_two,
+    .autodrop_pool_cards .autodrop_list .autodrop_list_three {
+      width: 180px;
+    }
+  }
+  .team_page .linear-view .filter .btn_black {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 993px) {
-    .main {
-        &_container {
-            max-width: calc(100% - 40px);
-        }
+  .main {
+    &_container {
+      max-width: calc(100% - 40px);
+    }
+  }
+
+  .pagination {
+    a {
+      flex-shrink: 0;
+    }
+  }
+
+  .links_btns {
+    max-width: 100%;
+    margin: 10px 0;
+    flex-direction: column;
+
+    .btn_white,
+    .btn_black,
+    .btn_yellow {
+      flex: none;
+      height: 50px;
+      width: 260px;
+    }
+  }
+
+  .title_top {
+    align-items: start !important;
+    margin: 10px 0;
+  }
+
+  .news {
+    &_card {
+      width: calc(100%);
+
+      span {
+        top: 15px;
+        right: 9px;
+      }
+    }
+  }
+
+  .new {
+    .title_top {
+      flex-direction: row !important;
     }
 
-    .pagination {
-        a {
-            flex-shrink: 0;
+    .main_content {
+      gap: 14px;
+    }
+
+    &_main_block {
+      padding: 15px 30px 30px 30px;
+    }
+
+    &_logo {
+      margin: 60px 0;
+    }
+
+    &_block {
+      .new_block_img {
+        height: 229px;
+      }
+    }
+
+    &_block_yellow {
+      .new_block_img {
+        height: 172px;
+        padding: 11px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+
+    &_social {
+      justify-content: center;
+    }
+
+    &_btns {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .promo {
+    &_cards {
+      flex-direction: column;
+    }
+
+    &_card {
+      width: 100%;
+    }
+  }
+
+  .academy_cards {
+    .academy_card {
+      width: calc(100%);
+    }
+  }
+
+  .events {
+    &_text {
+      .events_btns {
+        width: 100%;
+        flex-direction: column;
+
+        .btn_yellow,
+        .btn_white {
+          width: 100%;
         }
+      }
+    }
+
+    &_item {
+      width: calc(100%);
+
+      a {
+        padding: 15px;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .venture_deals_block {
+    &_result {
+      .venture_btns {
+        flex-direction: column;
+
+        .btn_white,
+        .btn_yellow {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .verture_deals_block_two {
+    .venture_deals_block_result {
+      flex-direction: column-reverse;
+
+      .result_top,
+      .result_bottom {
+        width: 100%;
+      }
+    }
+  }
+
+  .venture_totals {
+    flex-direction: column;
+
+    .venture_totals_img {
+      height: 420px;
+    }
+
+    .venture_totals_img,
+    .venture_totals_text {
+      width: 100%;
+    }
+
+    .full_total {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  .venture_trading {
+    &_cards {
+      gap: 10px;
+    }
+
+    &_title {
+      flex-direction: column;
+      align-items: start !important;
+      gap: 10px;
+
+      .btn_yellow {
+        width: 100%;
+      }
     }
 
     .links_btns {
-        max-width: 100%;
-        margin: 10px 0;
-        flex-direction: column;
+      max-width: 100%;
 
-        .btn_white,
-        .btn_black,
-        .btn_yellow {
-            flex: none;
-            height: 50px;
-            width: 260px;
-        }
+      .btn_white,
+      .btn_yellow {
+        width: 100%;
+      }
     }
 
+    &_card {
+      width: calc(100%);
+    }
+  }
+
+  .node_cards {
+    .links_btns {
+      padding: 18px 35px;
+
+      .btn_black,
+      .btn_white {
+        width: 100%;
+      }
+    }
+
+    .main_content_top {
+      margin-bottom: 10px;
+    }
+
+    .node_card_title {
+      flex-direction: column;
+      gap: 18px;
+      text-align: center;
+
+      .btn_white {
+        width: 100%;
+      }
+    }
+
+    .node_cards_block {
+      gap: 20px;
+
+      .venture_trading_card {
+        width: calc(100%);
+      }
+    }
+  }
+
+  .node_trading {
+    &_card {
+      width: calc(100%);
+    }
+
+    .main_content_bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .event {
+    &_in {
+      gap: 10px;
+    }
+
+    .bay_ticket {
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      padding: 20px 10px;
+
+      .btn_yellow {
+        width: 100%;
+      }
+    }
+
+    &_text {
+      padding: 0 10px;
+    }
+
+    .event_slider_title {
+      padding: 0 10px;
+    }
+
+    .event_tarif {
+      &_card {
+        width: calc(100%);
+        gap: 40px;
+      }
+    }
+  }
+
+  .faq_block {
+    .faq_title {
+      padding: 50px 15px;
+    }
+  }
+
+  .autodrop {
     .title_top {
-        align-items: start !important;
-        margin: 10px 0;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .news {
-        &_card {
-            width: calc(100%);
+    .autodrop_progress {
+      width: 95%;
 
-            span {
-                top: 15px;
-                right: 9px;
-            }
-        }
+      .progress_in {
+        width: 100%;
+      }
     }
 
-    .new {
-
-        .title_top {
-            flex-direction: row !important;
-        }
-
-        .main_content {
-            gap: 14px;
-        }
-
-        &_main_block {
-            padding: 15px 30px 30px 30px;
-        }
-
-        &_logo {
-            margin: 60px 0;
-        }
-
-        &_block {
-            .new_block_img {
-                height: 229px;
-            }
-        }
-
-        &_block_yellow {
-            .new_block_img {
-                height: 172px;
-                padding: 11px;
-            }
-
-            button {
-                width: 100%;
-            }
-        }
-
-        &_social {
-            justify-content: center;
-        }
-
-        &_btns {
-            flex-direction: column;
-
-            button {
-                width: 100%;
-            }
-        }
+    .links_btns {
+      .btn_black {
+        width: 100%;
+      }
     }
 
-    .promo {
-        &_cards {
-            flex-direction: column;
-        }
+    &_blocks {
+      .autodrop_block {
+        flex-direction: column-reverse;
+        text-align: center;
 
-        &_card {
-            width: 100%;
-        }
-    }
-
-    .academy_cards {
-        .academy_card {
-            width: calc(100%);
-        }
-    }
-
-    .events {
-
-        &_text {
-            .events_btns {
-                width: 100%;
-                flex-direction: column;
-
-                .btn_yellow,
-                .btn_white {
-                    width: 100%;
-                }
-            }
-        }
-
-        &_item {
-            width: calc(100%);
-
-            a {
-                padding: 15px;
-                justify-content: space-between;
-            }
-        }
-    }
-
-    .venture_deals_block {
-        &_result {
-            .venture_btns {
-                flex-direction: column;
-
-                .btn_white,
-                .btn_yellow {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    .verture_deals_block_two {
-        .venture_deals_block_result {
-            flex-direction: column-reverse;
-
-            .result_top,
-            .result_bottom {
-                width: 100%;
-            }
-        }
-    }
-
-    .venture_totals {
-        flex-direction: column;
-
-        .venture_totals_img {
-            height: 420px;
-        }
-
-        .venture_totals_img,
-        .venture_totals_text {
-            width: 100%;
-        }
-
-        .full_total {
-            flex-direction: column;
-            gap: 5px;
-        }
-    }
-
-    .venture_trading {
-        &_cards {
-            gap: 10px;
-        }
-
-        &_title {
-            flex-direction: column;
-            align-items: start !important;
-            gap: 10px;
-
-            .btn_yellow {
-                width: 100%;
-            }
-        }
-
-        .links_btns {
-            max-width: 100%;
-
-            .btn_white,
-            .btn_yellow {
-                width: 100%;
-            }
-        }
-
-        &_card {
-            width: calc(100%);
-        }
-    }
-
-    .node_cards {
-        .links_btns {
-            padding: 18px 35px;
-            .btn_black,
-            .btn_white {
-                width: 100%;
-            }
-        }
-
-        .main_content_top {
-            margin-bottom: 10px;
-        }
-
-        .node_card_title {
-            flex-direction: column;
-            gap: 18px;
-            text-align: center;
-
-            .btn_white {
-                width: 100%;
-            }
-        }
-
-        .node_cards_block {
-            gap: 20px;
-
-            .venture_trading_card {
-                width: calc(100%);
-            }
-        }
-    }
-
-    .node_trading {
-        &_card {
-            width: calc(100%);
-        }
-
-        .main_content_bottom {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-
-    .event {
-        &_in {
-            gap: 10px;
-        }
-
-        .bay_ticket {
-            flex-direction: column;
-            align-items: start;
-            gap: 20px;
-            padding: 20px 10px;
-
-            .btn_yellow {
-                width: 100%;
-            }
+        .btn_white {
+          margin: 0 auto;
         }
 
         &_text {
-            padding: 0 10px;
+          padding: 26px 0;
         }
-
-        .event_slider_title {
-            padding: 0 10px;
-        }
-    
-        .event_tarif {
-            &_card {
-                width: calc(100%);
-                gap: 40px;
-            }
-        }
+      }
     }
 
-    .faq_block {
-        .faq_title {
-            padding: 50px 15px;
+    &_bottom {
+      flex-direction: column;
+
+      .autodrop_block {
+        text-align: left;
+        flex-direction: column-reverse;
+
+        &_text {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
         }
+      }
     }
 
-    .autodrop {
+    &_mail {
+      &_link {
+        padding: 15px;
+        width: calc(100%);
+      }
+    }
+  }
 
-        .title_top {
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .autodrop_progress {
-            width: 95%;
-
-            .progress_in {
-                width: 100%;
-            }
-        }
-
-        .links_btns {
-            .btn_black {
-                width: 100%;
-            }
-        }
-
-        &_blocks {
-            .autodrop_block {
-                flex-direction: column-reverse;
-                text-align: center;
-
-                .btn_white {
-                    margin: 0 auto;
-                }
-
-                &_text {
-                    padding: 26px 0;
-                }
-            }
-        }
-
-        &_bottom {
-            flex-direction: column;
-            .autodrop_block {
-                text-align: left;
-                flex-direction: column-reverse;
-
-                &_text {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: row-reverse;
-                }
-            }
-        }
-
-        &_mail {
-            &_link {
-                padding: 15px;
-                width: calc(100%);
-            }
-        }
+  .autodrop_mainet {
+    .title_top {
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .autodrop_mainet {
-        .title_top {
-            flex-direction: column;
-            gap: 10px;
-        }
+    .autodrop_progress {
+      width: 95%;
 
-        .autodrop_progress {
-            width: 95%;
-
-            .progress_in {
-                width: 100%;
-            }
-        }
-
-        .links_btns {
-            .btn_black {
-                width: 100%;
-            }
-        }
-
-        &_block {
-            width: calc(100% / 2 - 5px);
-            flex-direction: column;
-            align-items: center;
-            padding: 20px 8px;
-
-            &_text {
-                flex-direction: column;
-                gap: 10px;
-
-                img {
-                    width: 61px;
-                    height: 61px;
-                }
-            }
-        }
-
-        .btn_yellow {
-            width: 100%;
-        }
+      .progress_in {
+        width: 100%;
+      }
     }
 
-    .autodrop_pool_cards {
-
-        .title_top {
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .autodrop_blast_title {
-            flex-direction: row;
-        }
-
-        .autodrop_progress {
-            width: 95%;
-
-            .progress_in {
-                width: 100%;
-            }
-        }
-
-        .links_btns {
-            .btn_black {
-                width: 100%;
-            }
-        }
-
-        &_blocks {
-            flex-direction: column;
-        }
-
-        .main_content {
-            padding: 20px 14px;
-        }
-
-        .autodrop_pool_card {
-            width: calc(100%);
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .autodrop_top_block {
-            flex-direction: column;
-            text-align: center;
-
-            img {
-                margin: 0 auto;
-            }
-
-            .autodrop_top_main {
-                width: 100%;
-            }
-        }
-
-        .new_main_block {
-            .btn_yellow {
-                width: 100%;
-            }
-        }
-
-        .autodrop_list {
-
-            li {
-                gap: 2px;
-            }
-
-            .autodrop_list_three {
-    
-                br {
-                    display: block;
-                }
-            }
-        }
+    .links_btns {
+      .btn_black {
+        width: 100%;
+      }
     }
 
-    .tarif_title {
-        align-items: start;
-        flex-direction: column;
-        gap: 20px;
+    &_block {
+      width: calc(100% / 2 - 5px);
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 8px;
 
-        .btn_yellow {
-            width: 100%;
-        }
-    }
-
-    .unlock_top {
+      &_text {
         flex-direction: column;
         gap: 10px;
-    }
 
-    .unlock_list {
-        flex-direction: column;
-        padding: 10px;
-        align-items: start;
-        gap: 20px;
-
-        .btn_black,
-        .btn_white,
-        .btn_yellow {
-            width: 100%;
+        img {
+          width: 61px;
+          height: 61px;
         }
+      }
     }
+
+    .btn_yellow {
+      width: 100%;
+    }
+  }
+
+  .autodrop_pool_cards {
+    .title_top {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .autodrop_blast_title {
+      flex-direction: row;
+    }
+
+    .autodrop_progress {
+      width: 95%;
+
+      .progress_in {
+        width: 100%;
+      }
+    }
+
+    .links_btns {
+      .btn_black {
+        width: 100%;
+      }
+    }
+
+    &_blocks {
+      flex-direction: column;
+    }
+
+    .main_content {
+      padding: 20px 14px;
+    }
+
+    .autodrop_pool_card {
+      width: calc(100%);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .autodrop_top_block {
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+
+      .autodrop_top_main {
+        width: 100%;
+      }
+    }
+
+    .new_main_block {
+      .btn_yellow {
+        width: 100%;
+      }
+    }
+
+    .autodrop_list {
+      li {
+        gap: 2px;
+      }
+
+      .autodrop_list_three {
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .tarif_title {
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+
+    .btn_yellow {
+      width: 100%;
+    }
+  }
+
+  .unlock_top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .unlock_list {
+    flex-direction: column;
+    padding: 10px;
+    align-items: start;
+    gap: 20px;
+
+    .btn_black,
+    .btn_white,
+    .btn_yellow {
+      width: 100%;
+    }
+  }
+  //   team page
+  .team_page .referrals_section .copy_clipboard {
+    display: none;
+  }
+  .team_page .referrals_section .user_box.first {
+    margin-top: 0 !important;
+  }
+  .team_page .tab-content {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .main {
-        &_container {
-            max-width: calc(100% - 20px);
-        }
+  .main {
+    &_container {
+      max-width: calc(100% - 20px);
+    }
+  }
+
+  .header {
+    .main_container {
+      padding: 10px 5px 20px 5px;
     }
 
-    .header {
-
-        .main_container {
-            padding: 10px 5px 20px 5px;
-        }
-
-        &_logo {
-            max-width: 70px;
-        }
-
-        &_user_img {
-            img {
-                width: 75px;
-            }
-        }
-
-        .header_user_name {
-            max-width: 140px;
-        }
-
-        .user_bottom {
-            width: 96px;
-        }
-
-        .nav {
-            width: 100%;
-            &_link {
-                overflow-x: scroll;
-                width: 770px;
-                justify-content: space-between;
-
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-            }
-        }
+    &_logo {
+      max-width: 70px;
     }
 
-    .login {
-        .main_container {
-            padding-top: 40px;
-            gap: 40px;
-        }
-
-        label {
-            width: 100%;
-        }
-
-        input {
-            width: 100%;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        .btn_yellow {
-            width: 100%;
-        }
+    &_user_img {
+      img {
+        width: 75px;
+      }
     }
+
+    .header_user_name {
+      max-width: 140px;
+    }
+
+    .user_bottom {
+      width: 96px;
+    }
+
+    .nav {
+      width: 100%;
+
+      &_link {
+        overflow-x: scroll;
+        width: 770px;
+        justify-content: space-between;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .login {
+    .main_container {
+      padding-top: 40px;
+      gap: 40px;
+    }
+
+    label {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .btn_yellow {
+      width: 100%;
+    }
+  }
+  .team_page .search_box {
+    max-width: 201px;
+  }
+  .team_page .cards .copy_clipboard {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .team_page .right_card .btns {
+    flex-direction: column;
+  }
+  .team_page {
+    .linear-view .autodrop_pool_cards .autodrop_list li {
+      min-width: 900px;
+    }
+  }
+  .team_page .linear-view .autodrop_pool_cards .autodrop_list {
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }

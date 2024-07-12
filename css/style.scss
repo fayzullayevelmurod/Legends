@@ -2894,9 +2894,36 @@ label,
 
 // team page
 .team_page {
+  .copy_clipboard {
+    display: flex;
+    padding-top: 35px;
+    gap: 16px;
+    flex-direction: column;
+    img {
+      cursor: pointer;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .copy_box {
+      padding: 13px 10px;
+      border-radius: 12px;
+      background: $color-black80;
+      span {
+        color: $color-white100;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+      }
+    }
+  }
   .search_box {
     position: relative;
     width: 320px;
+
     .search_icon {
       position: absolute;
       top: 50%;
@@ -2943,6 +2970,7 @@ label,
   }
   .autodrop_list {
     background: $color-black100;
+    height: 100%;
     li {
       padding: 0;
     }
@@ -2951,6 +2979,10 @@ label,
     display: flex;
     gap: 36px;
     padding-top: 20px;
+    align-items: stretch;
+    & > div {
+      height: unset;
+    }
   }
   .autodrop_pool_cards {
     max-width: 747px;
@@ -2995,6 +3027,13 @@ label,
     }
   }
   .referrals_section {
+    .copy_clipboard {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .copy_box {
+      width: 475px;
+    }
     .main_title {
       padding: 20px 0;
     }
@@ -3013,6 +3052,9 @@ label,
       margin: 0 auto;
     }
     .user_box {
+      &.first {
+        margin-top: -60px;
+      }
       .user_img_box {
         position: relative;
         margin: 0 auto;
@@ -3053,12 +3095,10 @@ label,
   }
   .linear-view {
     .filter {
-      display: flex;
-      gap: 12px;
       padding: 18px;
       border-radius: 24px;
       background: $color-black100;
-      width: fit-content;
+      max-width: 1088px;
       margin: 20px auto;
 
       .btn_black {
