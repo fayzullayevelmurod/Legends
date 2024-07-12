@@ -2822,6 +2822,31 @@ label,
   text-align: right !important;
 }
 
+.node_two .node_card_title_bottom {
+  margin-top: 20px;
+}
+.node_two .middle_block {
+  padding: 38px 30px 10px 30px;
+}
+.node_two .node_card_text h6 {
+  font-size: 24px;
+  line-height: 32px;
+}
+.node_two .node_card_text {
+  padding-bottom: 21px;
+}
+.node_two .content_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 30px;
+}
+.node_two .desc_box {
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   padding: 50px 0 40px 0;
 }
@@ -3664,6 +3689,9 @@ label,
   .autodrop_pool_cards .autodrop_list li h6 {
     font-size: 16px;
   }
+  .node_two .middle_block {
+    padding: 40px 20px 20px 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .main_container {
@@ -3785,5 +3813,12 @@ label,
   }
   .magazine .title_box {
     row-gap: 20px;
+  }
+  .solana_logo {
+    width: 241px;
+    height: 35px;
+  }
+  .node_two .middle_block {
+    padding: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

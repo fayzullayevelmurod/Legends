@@ -816,6 +816,9 @@
   .autodrop_pool_cards .autodrop_list li h6 {
     font-size: 16px;
   }
+  .node_two .middle_block {
+    padding: 40px 20px 20px 20px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -959,5 +962,12 @@
     .title_box {
       row-gap: 20px;
     }
+  }
+  .solana_logo {
+    width: 241px;
+    height: 35px;
+  }
+  .node_two .middle_block {
+    padding: 10px;
   }
 }
