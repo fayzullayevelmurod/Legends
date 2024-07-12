@@ -300,6 +300,33 @@
   .personal_area_page .personal_area {
     padding: 20px 14px;
   }
+  .node_wrapper .key {
+    flex-direction: column;
+    gap: 41px;
+  }
+  .node_wrapper .node_tarif {
+    flex-direction: column;
+    & > div {
+      width: 100%;
+    }
+  }
+  .node_wrapper .node_steps .step_boxes {
+    flex-direction: column;
+    gap: 82px;
+    & > div {
+      max-width: 100%;
+    }
+    .step_img_box {
+      order: -1;
+    }
+  }
+  .node_wrapper .node_steps .step_swiper .swiper-pagination {
+    top: 554px;
+  }
+  .node_wrapper .node_steps .btns {
+    bottom: unset;
+    top: 469px;
+  }
 }
 
 @media only screen and (max-width: 993px) {
@@ -969,5 +996,34 @@
   }
   .node_two .middle_block {
     padding: 10px;
+  }
+  .node_wrapper .node_steps .step_boxes .step_img_box {
+    height: 260px;
+  }
+  .node_wrapper .node_steps .btns {
+    top: 286px;
+  }
+  .node_wrapper .node_steps .step_swiper .swiper-pagination {
+    top: 370px;
+  }
+  .node_wrapper .key_in .key_inputs {
+    flex-direction: column;
+    & > * {
+      width: 100%;
+    }
+  }
+  .node_wrapper .key_in .key_inputs input {
+    width: 100%;
+  }
+  .node_wrapper .node_tarif > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .node_wrapper .node_tarif_text h6 {
+    margin-bottom: 12px;
+  }
+  .node_wrapper .node_tarif_img {
+    order: -1;
   }
 }

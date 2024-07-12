@@ -2227,6 +2227,95 @@ label,
   flex-direction: column;
   gap: 20px;
 }
+.node_wrapper .node_steps {
+  background: #0a0a0c;
+  padding: 20px;
+  border-radius: 32px;
+}
+.node_wrapper .node_steps .step_img_box {
+  max-width: 620px;
+  width: 100%;
+  height: 440px;
+  border-radius: 32px;
+  background: #101015;
+}
+.node_wrapper .node_steps .step_content_box {
+  max-width: 521px;
+}
+.node_wrapper .node_steps .step_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.node_wrapper .node_steps .btns {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.node_wrapper .node_steps h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #e0c170;
+  padding: 13px 0;
+}
+.node_wrapper .node_steps .desc_box {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.node_wrapper .node_steps .step_swiper .swiper-pagination {
+  bottom: unset;
+  top: 36px;
+  left: 116px;
+  right: unset;
+  width: unset;
+}
+.node_wrapper .node_steps .step_swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #2a2a31;
+  opacity: 1;
+}
+.node_wrapper .node_steps .step_swiper .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+.node_wrapper .node_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.node_wrapper .node_info h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #e0c170;
+}
+.node_wrapper .node_info h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #e0c170;
+}
+.node_wrapper .node_info .info_box {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.node_wrapper .node_info .copy_clipboard {
+  max-width: 512px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  height: 50px;
+  padding: 0 20px;
+  color: #0a0a0c;
+}
+.node_wrapper .node_info .muted_text {
+  color: #878787;
+}
 .node_wrapper .node_main_img {
   padding: 65px 10px;
   display: flex;
@@ -2266,6 +2355,22 @@ label,
 }
 .node_wrapper .key_in .key_inputs {
   margin: 11px 0 15px 0;
+  display: flex;
+  gap: 10px;
+}
+.node_wrapper .key_in .key_inputs input {
+  background: #fff;
+  width: 342px;
+  height: 50px;
+  border-radius: 12px;
+  padding: 10px;
+}
+.node_wrapper .key_in .key_inputs .togglePassword {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  cursor: pointer;
 }
 .node_wrapper .key_in p {
   font-size: 16px;
@@ -3327,6 +3432,33 @@ label,
   .personal_area_page .personal_area {
     padding: 20px 14px;
   }
+  .node_wrapper .key {
+    flex-direction: column;
+    gap: 41px;
+  }
+  .node_wrapper .node_tarif {
+    flex-direction: column;
+  }
+  .node_wrapper .node_tarif > div {
+    width: 100%;
+  }
+  .node_wrapper .node_steps .step_boxes {
+    flex-direction: column;
+    gap: 82px;
+  }
+  .node_wrapper .node_steps .step_boxes > div {
+    max-width: 100%;
+  }
+  .node_wrapper .node_steps .step_boxes .step_img_box {
+    order: -1;
+  }
+  .node_wrapper .node_steps .step_swiper .swiper-pagination {
+    top: 554px;
+  }
+  .node_wrapper .node_steps .btns {
+    bottom: unset;
+    top: 469px;
+  }
 }
 @media only screen and (max-width: 993px) {
   .main_container {
@@ -3820,5 +3952,34 @@ label,
   }
   .node_two .middle_block {
     padding: 10px;
+  }
+  .node_wrapper .node_steps .step_boxes .step_img_box {
+    height: 260px;
+  }
+  .node_wrapper .node_steps .btns {
+    top: 286px;
+  }
+  .node_wrapper .node_steps .step_swiper .swiper-pagination {
+    top: 370px;
+  }
+  .node_wrapper .key_in .key_inputs {
+    flex-direction: column;
+  }
+  .node_wrapper .key_in .key_inputs > * {
+    width: 100%;
+  }
+  .node_wrapper .key_in .key_inputs input {
+    width: 100%;
+  }
+  .node_wrapper .node_tarif > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .node_wrapper .node_tarif_text h6 {
+    margin-bottom: 12px;
+  }
+  .node_wrapper .node_tarif_img {
+    order: -1;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -125,3 +125,23 @@ try {
     },
   });
 } catch (error) {}
+
+// step_swiper
+try {
+  let swiper = new Swiper(".step_swiper", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".step_next_btn",
+      prevEl: ".step_prev_btn",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+} catch (error) {}

@@ -2799,6 +2799,98 @@ label,
   flex-direction: column;
   gap: 20px;
 
+  .node_steps {
+    background: $color-black90;
+    padding: 20px;
+    border-radius: 32px;
+    .step_img_box {
+      max-width: 620px;
+      width: 100%;
+      height: 440px;
+      border-radius: 32px;
+      background: $color-black80;
+    }
+    .step_content_box {
+      max-width: 521px;
+    }
+    .step_boxes {
+      display: flex;
+      justify-content: space-between;
+    }
+    .btns {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      z-index: 10;
+      cursor: pointer;
+    }
+    h5 {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      color: $color-yellow;
+      padding: 13px 0;
+    }
+    .desc_box {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .step_swiper {
+      .swiper-pagination {
+        bottom: unset;
+        top: 36px;
+        left: 116px;
+        right: unset;
+        width: unset;
+      }
+      .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: $color-low-blue50;
+        opacity: 1;
+      }
+      .swiper-pagination-bullet-active {
+        background: $color-white100;
+      }
+    }
+  }
+  .node_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h5 {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      color: $color-yellow;
+    }
+    h6 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.005em;
+      color: $color-yellow;
+    }
+    .info_box {
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+    }
+    .copy_clipboard {
+      max-width: 512px;
+      width: 100%;
+      background: $color-white100;
+      border-radius: 12px;
+      height: 50px;
+      padding: 0 20px;
+      color: $color-black90;
+    }
+    .muted_text {
+      color: $color-white50;
+    }
+  }
+
   .node_main_img {
     padding: 65px 10px;
     @include flex-full-center();
@@ -2841,6 +2933,22 @@ label,
 
       .key_inputs {
         margin: 11px 0 15px 0;
+        display: flex;
+        gap: 10px;
+        input {
+          background: #fff;
+          width: 342px;
+          height: 50px;
+          border-radius: 12px;
+          padding: 10px;
+        }
+        .togglePassword {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 10px;
+          cursor: pointer;
+        }
       }
 
       p {
