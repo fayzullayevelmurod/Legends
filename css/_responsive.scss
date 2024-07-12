@@ -810,6 +810,12 @@
   .personal_area_page .auth_box button {
     width: 100%;
   }
+  .autodrop_pool_cards .autodrop_list {
+    padding-top: 0;
+  }
+  .autodrop_pool_cards .autodrop_list li h6 {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -944,5 +950,14 @@
   .personal_area .row > * {
     padding-left: 0;
     padding-right: 0;
+  }
+  .autodrop_pool_cards .autodrop_list .autodrop_list_three {
+    width: 366px;
+    text-align: center;
+  }
+  .magazine {
+    .title_box {
+      row-gap: 20px;
+    }
   }
 }
