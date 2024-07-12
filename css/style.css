@@ -3396,6 +3396,12 @@ label,
     max-width: 257px;
     margin: 0 auto;
   }
+  .team_page .user_box:first-child {
+    margin-left: auto;
+  }
+  .team_page .user_box:last-child {
+    margin-right: auto;
+  }
   .team_page .user_box_second {
     gap: 176px;
     justify-content: center !important;

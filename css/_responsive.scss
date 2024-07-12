@@ -260,6 +260,14 @@
       min-width: 257px;
       max-width: 257px;
       margin: 0 auto;
+
+      &:first-child {
+        margin-left: auto;
+      }
+
+      &:last-child {
+        margin-right: auto;
+      }
     }
     .user_box_second {
       gap: 176px;
