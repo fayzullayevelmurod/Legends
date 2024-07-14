@@ -145,3 +145,7 @@ try {
     },
   });
 } catch (error) {}
+
+try {
+  const accoordion = document.quse;
+} catch (error) {}

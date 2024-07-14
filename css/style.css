@@ -402,6 +402,22 @@ label,
   flex-direction: column;
   gap: 5px;
 }
+.header_user_img div[class] {
+  display: inline-block;
+  width: 95px;
+  height: 95px;
+  filter: url(#round);
+  overflow: hidden;
+}
+.header_user_img .hexagone::before {
+  content: "";
+  display: block;
+  padding-top: 86.6%;
+  background: url(../images/header-user-img.png) no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
 .header_user_img img {
   width: 94px;
 }
@@ -709,6 +725,16 @@ label,
   transition: 0.3s ease;
 }
 
+.academy .accordion-flush .accordion-item .accordion-button,
+.academy .accordion-flush .accordion-item .accordion-button.collapsed {
+  padding: 20px;
+  margin: 0;
+  box-shadow: none;
+  color: #fff;
+}
+.academy .accordion-button::after {
+  display: none;
+}
 .academy_list {
   display: flex;
   flex-direction: column;
@@ -719,7 +745,21 @@ label,
   flex-direction: column;
   gap: 20px;
 }
-.academy a {
+.academy .accordion-body {
+  color: #fff;
+}
+.academy .accordion-button:focus,
+.academy .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border: none;
+}
+.academy .accordion-button {
+  padding: 20px;
+}
+.academy .academy_list_item {
+  padding-right: 20px;
+}
+.academy li {
   border-radius: 32px;
   background: #0a0a0c;
   padding: 20px;
@@ -728,7 +768,13 @@ label,
   justify-content: space-between;
   transition: 0.3s ease;
 }
-.academy a:hover .news_icon {
+.academy li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.academy li:hover .news_icon {
   transform: rotate(42deg);
 }
 .academy .news_icon {
@@ -736,11 +782,18 @@ label,
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.3s ease;
   background: #ffffff;
+}
+.academy .news_icon:hover {
+  background: #fff;
+}
+.academy .news_icon:hover svg path {
+  fill: #000000;
 }
 .academy .news_icon svg path {
   fill: #000000;
@@ -769,13 +822,16 @@ label,
   color: #2a2a31;
 }
 
-.faq .academy_list_item a {
+.faq .academy_list_item a,
+.faq .academy_list_item li {
   align-items: center;
 }
-.faq .academy_list_item a:hover .news_icon {
+.faq .academy_list_item a:hover .news_icon,
+.faq .academy_list_item li:hover .news_icon {
   background: #ffffff;
 }
-.faq .academy_list_item a:hover .news_icon svg path {
+.faq .academy_list_item a:hover .news_icon svg path,
+.faq .academy_list_item li:hover .news_icon svg path {
   fill: #101015;
 }
 .faq .news_icon {

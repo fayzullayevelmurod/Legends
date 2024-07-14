@@ -534,7 +534,28 @@ label,
       @include flex-center();
       @include flex-column();
       gap: 5px;
-
+      div[class] {
+        display: inline-block;
+        width: 95px;
+        height: 95px;
+        filter: url(#round);
+        overflow: hidden;
+      }
+      .hexagone::before {
+        content: "";
+        display: block;
+        padding-top: 86.6%;
+        background: url(../images/header-user-img.png) no-repeat;
+        background-size: cover;
+        clip-path: polygon(
+          25% 0%,
+          75% 0%,
+          100% 50%,
+          75% 100%,
+          25% 100%,
+          0% 50%
+        );
+      }
       img {
         width: 94px;
       }
@@ -918,6 +939,16 @@ label,
 
 // academy
 .academy {
+  .accordion-flush .accordion-item .accordion-button,
+  .accordion-flush .accordion-item .accordion-button.collapsed {
+    padding: 20px;
+    margin: 0;
+    box-shadow: none;
+    color: #fff;
+  }
+  .accordion-button::after {
+    display: none;
+  }
   &_list {
     display: flex;
     flex-direction: column;
@@ -929,8 +960,21 @@ label,
     flex-direction: column;
     gap: 20px;
   }
-
-  a {
+  .accordion-body {
+    color: #fff;
+  }
+  .accordion-button:focus,
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    border: none;
+  }
+  .accordion-button {
+    padding: 20px;
+  }
+  .academy_list_item {
+    padding-right: 20px;
+  }
+  li {
     @include border-radius();
     background: $color-black90;
     padding: 20px;
@@ -938,7 +982,12 @@ label,
     align-items: center;
     justify-content: space-between;
     @include transition();
-
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
     &:hover {
       .news_icon {
         transform: rotate(42deg);
@@ -951,10 +1000,18 @@ label,
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    cursor: pointer;
     @include flex-full-center();
     @include transition();
     background: $color-white100;
-
+    &:hover {
+      background: #fff;
+      svg {
+        path {
+          fill: $color-black100;
+        }
+      }
+    }
     svg {
       path {
         fill: $color-black100;
@@ -991,7 +1048,8 @@ label,
 // faq
 .faq {
   .academy_list_item {
-    a {
+    a,
+    li {
       align-items: center;
 
       &:hover {
