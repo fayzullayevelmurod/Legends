@@ -555,7 +555,7 @@
             <!-- new -->
             <section class="venture_trading">
                 <div class="main_container">
-                    <div class="title_top d-flex align-items-center justify-content-between">
+                    <div class="title_top d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <h3 class="main_top_title">
                             Личный кабинет
                         </h3>
@@ -585,7 +585,7 @@
                 <div class="main_container">
                     <div class="d-flex align-items-stretch justify-content-between account__top">
                         <div class="d-flex align-items-start justify-content-between account__datas">
-                            <div>
+                            <div class="account__datas_left">
                                 <h3>Александр Дроздов</h3>
                                 <p>id:2962ce3G</p>
                                 <div class="btn_diamond">Статус: Diamond</div>
@@ -600,7 +600,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="d-flex flex-column align-items-end">
+                            <div class="d-flex flex-column align-items-end account__datas_right">
                                 <div class="d-flex flex-column align-items-center">
                                     <img src="./images/user-avatar.png" alt="">
                                     <a href="#" class="btn_gray">Оптима</a>
@@ -694,31 +694,140 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="hexagone">
-                                <p>dsflk</p>
+                            <ul class="d-flex align-items-center flex-wrap referals_user">
+                                <li>
+                                    <img src="./images/referal-user-1.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-2.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-3.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-4.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-5.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-5.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-5.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-5.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="./images/referal-user-5.png" alt="">
+                                </li>
+                            </ul>
+                            <h3 class="title">Реферальная ссылка</h3>
+                            <ul class="d-flex links">
+                                <li>
+                                    <p>Левая ссылка</p>
+                                    <button>
+                                        <span>https://legendsgroup.xyz/ru/sgsers4tes4t34g</span>
+                                        <img src="./images/copy-icon.svg" alt="">
+                                    </button>
+                                </li>
+                                <li>
+                                    <p>Правая ссылка</p>
+                                    <button>
+                                        <span>https://legendsgroup.xyz/ru/sgsers4tes4t34g</span>
+                                        <img src="./images/copy-icon.svg" alt="">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="projects">
+                            <div class="d-flex align-items-center justify-content-between projects_head">
+                                <h3>Мои проекты</h3>
+                                <div class="btns">
+                                    <button class="projects_btn__prev">
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.5854 5.62163C0.288521 5.91851 0.288521 6.39985 0.5854 6.69673L5.42332 11.5347C5.7202 11.8315 6.20154 11.8315 6.49842 11.5347C6.7953 11.2378 6.7953 10.7564 6.49842 10.4596L2.19804 6.15918L6.49842 1.8588C6.7953 1.56192 6.7953 1.08059 6.49842 0.783708C6.20154 0.486829 5.7202 0.486829 5.42332 0.783708L0.5854 5.62163ZM1.12305 5.39897H1.12295V6.91939H1.12305V5.39897Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <button class="projects_btn__next">
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.4146 5.62163C6.71148 5.91851 6.71148 6.39985 6.4146 6.69673L1.57668 11.5347C1.2798 11.8315 0.798461 11.8315 0.501582 11.5347C0.204702 11.2378 0.204702 10.7564 0.501582 10.4596L4.80196 6.15918L0.501582 1.8588C0.204702 1.56192 0.204702 1.08059 0.501582 0.783708C0.798461 0.486829 1.2798 0.486829 1.57668 0.783708L6.4146 5.62163ZM5.87695 5.39897H5.87705V6.91939H5.87695V5.39897Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <svg style="visibility: hidden; position: absolute;" width="0" height="0"
-                                xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                <defs>
-                                    <filter id="round">
-                                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
-                                        <feColorMatrix in="blur" mode="matrix"
-                                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-                                    </filter>
-                                </defs>
-                            </svg>
-                            <div class="swiper">
+                            <div class="swiper projects_swp">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="" alt="">
-                                        </a>
+                                        <img src="./images/projects-swp-1.svg" alt="">
+                                        <p>Pocket Univerce</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/projects-swp-2.svg" alt="">
+                                        <p>Saga</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/projects-swp-3.svg" alt="">
+                                        <p>Catalyst</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./images/projects-swp-4.svg" alt="">
+                                        <p>Mangata</p>
                                     </div>
                                 </div>
                             </div>
+                            <a href="#" class="projects_links">
+                                <img src="./images/calendar-icon.svg" alt="">
+                                <span>Календарь разлоков</span>
+                            </a>
                         </div>
-                        <div class="projects"></div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between presentation">
+                        <img src="./images/presentation-bg.png" class="presentation_bg" alt="">
+                        <div>
+                            <h3>Презентация Legends Group</h3>
+                            <a href="#" class="link">
+                                <img src="./images/download-icon.svg" alt="">
+                                <span>Скачать презентацию</span>
+                            </a>
+                        </div>
+                        <div>
+                            <h4>Поделиться:</h4>
+                            <ul class="d-flex align-items-center networks">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/networks-icon-1.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/networks-icon-2.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/networks-icon-3.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/networks-icon-4.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/networks-icon-5.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>

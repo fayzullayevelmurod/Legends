@@ -3689,6 +3689,12 @@ label,
 
     ul {
       gap: 12px;
+
+      a {
+        font-size: 12px;
+        line-height: 16px;
+        width: 180px;
+      }
     }
 
     .btn_gray {
@@ -3851,6 +3857,7 @@ label,
 
   &_foot {
     gap: 10px;
+    margin-bottom: 20px;
 
     .referals {
       width: 100%;
@@ -3858,33 +3865,6 @@ label,
       padding: 20px;
       background: #000;
       color: #fff;
-
-      .hexagone {
-        display: inline-block;
-        width: 150px;
-        color: red;
-        margin: 20px;
-        filter: url(#round);
-
-        p {
-          color: #fff !important;
-        }
-
-        &::before {
-          content: "";
-          display: block;
-          padding-top: 86.6%;
-          background: currentColor;
-          clip-path: polygon(
-            25% 0%,
-            75% 0%,
-            100% 50%,
-            75% 100%,
-            25% 100%,
-            0% 50%
-          );
-        }
-      }
 
       &_head {
         margin-bottom: 10px;
@@ -3908,6 +3888,50 @@ label,
           border-radius: 6px;
         }
       }
+
+      &_user {
+        gap: 7px;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        color: #fff;
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      .links {
+        gap: 10px;
+
+        li {
+          width: calc(50% - 5px);
+        }
+
+        p {
+          margin-bottom: 8px;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.5%;
+          font-weight: 400;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          text-align: left;
+          background: #101015;
+          padding: 14px 10px;
+          border-radius: 12px;
+          font-size: 12px;
+          line-height: 16px;
+          letter-spacing: -0.5%;
+          color: #fff;
+        }
+      }
     }
 
     .projects {
@@ -3916,6 +3940,124 @@ label,
       background: #000;
       padding: 15px;
       border-radius: 32px;
+      overflow: hidden;
+
+      &_head {
+        margin-bottom: 15px;
+
+        h3 {
+          font-size: 32px;
+          font-weight: 400;
+          line-height: 44px;
+          color: #fff;
+        }
+
+        .btns {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        button {
+          width: 24px;
+          height: 24px;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 6px;
+        }
+      }
+
+      &_swp {
+        overflow: visible;
+        margin-bottom: 15px;
+
+        .swiper {
+          &-wrapper {
+            align-items: stretch;
+          }
+
+          &-slide {
+            height: auto;
+            background: #101015;
+            border-radius: 18px;
+            width: 106px;
+            text-align: center;
+            padding: 15px;
+
+            p {
+              font-size: 16.74px;
+              line-height: 24.3px;
+              color: #fff;
+              margin-top: 12px;
+            }
+          }
+        }
+      }
+
+      &_links {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background: #fff;
+        border-radius: 48px;
+        gap: 10px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.5%;
+      }
+    }
+  }
+
+  .presentation {
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    z-index: 1;
+    height: 440px;
+    padding: 22px 41px 31px;
+
+    &_bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    h3 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 44px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #E0C170;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.5%;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.5%;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .networks {
+      gap: 10px;
     }
   }
 }

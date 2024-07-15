@@ -3075,6 +3075,11 @@ label,
 .account__datas ul {
   gap: 12px;
 }
+.account__datas ul a {
+  font-size: 12px;
+  line-height: 16px;
+  width: 180px;
+}
 .account__datas .btn_gray {
   margin: 1px 0 28px;
 }
@@ -3211,6 +3216,7 @@ label,
 }
 .account_foot {
   gap: 10px;
+  margin-bottom: 20px;
 }
 .account_foot .referals {
   width: 100%;
@@ -3218,24 +3224,6 @@ label,
   padding: 20px;
   background: #000;
   color: #fff;
-}
-.account_foot .referals .hexagone {
-  display: inline-block;
-  width: 150px;
-  color: red;
-  margin: 20px;
-  filter: url(#round);
-}
-.account_foot .referals .hexagone p {
-  color: #fff !important;
-}
-.account_foot .referals .hexagone::before {
-  content: "";
-  display: block;
-  padding-top: 86.6%;
-  background: currentColor;
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 .account_foot .referals_head {
   margin-bottom: 10px;
@@ -3256,14 +3244,179 @@ label,
   background: #fff;
   border-radius: 6px;
 }
+.account_foot .referals_user {
+  gap: 7px;
+  margin-bottom: 20px;
+}
+.account_foot .referals .title {
+  color: #fff;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.account_foot .referals .links {
+  gap: 10px;
+}
+.account_foot .referals .links li {
+  width: calc(50% - 5px);
+}
+.account_foot .referals .links p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5%;
+  font-weight: 400;
+}
+.account_foot .referals .links button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  background: #101015;
+  padding: 14px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5%;
+  color: #fff;
+}
 .account_foot .projects {
   width: 488px;
   flex-shrink: 0;
   background: #000;
   padding: 15px;
   border-radius: 32px;
+  overflow: hidden;
+}
+.account_foot .projects_head {
+  margin-bottom: 15px;
+}
+.account_foot .projects_head h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #fff;
+}
+.account_foot .projects_head .btns {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.account_foot .projects_head button {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.account_foot .projects_swp {
+  overflow: visible;
+  margin-bottom: 15px;
+}
+.account_foot .projects_swp .swiper-wrapper {
+  align-items: stretch;
+}
+.account_foot .projects_swp .swiper-slide {
+  height: auto;
+  background: #101015;
+  border-radius: 18px;
+  width: 106px;
+  text-align: center;
+  padding: 15px;
+}
+.account_foot .projects_swp .swiper-slide p {
+  font-size: 16.74px;
+  line-height: 24.3px;
+  color: #fff;
+  margin-top: 12px;
+}
+.account_foot .projects_links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: #fff;
+  border-radius: 48px;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5%;
+}
+.account .presentation {
+  position: relative;
+  border-radius: 32px;
+  overflow: hidden;
+  z-index: 1;
+  height: 440px;
+  padding: 22px 41px 31px;
+}
+.account .presentation_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.account .presentation h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.account .presentation .link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #E0C170;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5%;
+}
+.account .presentation h4 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5%;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.account .presentation .networks {
+  gap: 10px;
 }
 
+@media only screen and (max-width: 1370px) {
+  .account .main_container {
+    max-width: calc(100% - 40px);
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .account__top {
+    flex-direction: column;
+  }
+  .account_balance {
+    width: 100%;
+  }
+  .account_balance__top ul li {
+    width: auto;
+  }
+  .account_balance__top ul a {
+    width: 200px;
+  }
+  .account_foot {
+    flex-direction: column;
+  }
+  .account_foot .projects {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .main_container {
     max-width: calc(100% - 110px);
@@ -4043,5 +4196,78 @@ label,
   }
   .node_wrapper .node_tarif_img {
     order: -1;
+  }
+  .account .main_container {
+    max-width: 100%;
+  }
+  .account__datas {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px 28px;
+  }
+  .account__datas_left {
+    width: 100%;
+  }
+  .account__datas .btn_diamond {
+    margin-bottom: 20px;
+  }
+  .account__datas ul {
+    flex-direction: column;
+  }
+  .account__datas ul li {
+    width: 100%;
+  }
+  .account__datas ul li a {
+    width: 100%;
+  }
+  .account__datas_right {
+    width: 100%;
+    align-items: center !important;
+  }
+  .account_balance__top {
+    padding: 24px 18px 25px;
+  }
+  .account_balance__top h4 {
+    text-align: center;
+  }
+  .account_balance__top h3 {
+    text-align: center;
+  }
+  .account_balance__top ul {
+    flex-direction: column;
+  }
+  .account_balance__top ul li {
+    width: 100%;
+  }
+  .account_balance__top ul li a {
+    width: 100%;
+  }
+  .account_balance__foot {
+    flex-direction: column;
+  }
+  .account_balance__foot li {
+    width: 100%;
+  }
+  .account .catalyst {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .account .catalyst ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .account .catalyst ul li {
+    width: 100%;
+  }
+  .account .catalyst ul li a {
+    width: 100%;
+  }
+  .account_foot .referals .links {
+    flex-direction: column;
+  }
+  .account_foot .referals .links li {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

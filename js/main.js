@@ -149,3 +149,8 @@ try {
 try {
   const accoordion = document.quse;
 } catch (error) {}
+
+let projectSwp = new Swiper('.projects_swp', {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+})

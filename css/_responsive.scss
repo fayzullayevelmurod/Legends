@@ -1,3 +1,43 @@
+@media only screen and (max-width: 1370px) {
+  .account {
+    .main_container {
+      max-width: calc(100% - 40px);
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .account {
+    &__top {
+      flex-direction: column;
+    }
+
+    &_balance {
+      width: 100%;
+
+      &__top {
+        ul {
+          li {
+            width: auto;
+          }
+
+          a { 
+            width: 200px;
+          }
+        }
+      }
+    }
+
+    &_foot {
+      flex-direction: column;
+
+      .projects {
+        width: 100%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .main {
     &_container {
@@ -1033,5 +1073,108 @@
   }
   .node_wrapper .node_tarif_img {
     order: -1;
+  }
+
+  .account {
+    .main_container {
+      max-width: 100%;
+    }
+
+    &__datas {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+      padding: 20px 28px;
+
+      &_left {
+        width: 100%;
+      }
+
+      .btn_diamond {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        flex-direction: column;
+
+        li {
+          width: 100%;
+
+          a {
+            width: 100%;
+          }
+        }
+      }
+
+      &_right {
+        width: 100%;
+        align-items: center !important;
+      }
+    }
+
+    &_balance {
+      &__top {
+        padding: 24px 18px 25px;
+
+        h4 {
+          text-align: center;
+        }
+
+        h3 {
+          text-align: center;
+        }
+
+        ul {
+          flex-direction: column;
+          
+          li {
+            width: 100%;
+
+            a {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &__foot {
+        flex-direction: column;
+
+        li {
+          width: 100%;
+        }
+      }
+    }
+
+    .catalyst {
+      flex-direction: column;
+      gap: 20px;
+
+      ul {
+        flex-direction: column;
+        width: 100%;
+
+        li {
+          width: 100%;
+
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &_foot {
+      .referals {
+        .links {
+          flex-direction: column;
+
+          li {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
